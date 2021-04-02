@@ -1,0 +1,40 @@
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__item {
+  list-style: none;
+  box-shadow:
+    0 1px 0 $basic_black,
+    inset 0 1px 0 $shadow_white;
+
+  background-color: $dark_grey;
+  text-align: center;
+}
+
+.main-nav__link {
+  display: block;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $basic_white;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.main-nav__wrapper {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-nav__toggle {
+  background: none;
+  border: none;
+}

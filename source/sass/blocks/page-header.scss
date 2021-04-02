@@ -1,0 +1,23 @@
+.page-header {
+  background-image: url("../img/decoration/back-mobile.png");
+  background-color: $opacity_black;
+  background-repeat: no-repeat;
+}
+
+.page-header__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 280px;
+}
+
+.page-header__box {
+  background-color: $opacity_black;
+
+  padding-top: 21px;
+  padding-bottom: 22px;
+
+  display: flex;
+}

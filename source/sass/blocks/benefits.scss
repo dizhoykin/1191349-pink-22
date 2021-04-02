@@ -1,0 +1,37 @@
+.benefits {
+  text-align: center;
+}
+
+.benefits__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefits__list {
+  background-color: $light_grey;
+  list-style: none;
+
+  padding: 0;
+}
+
+.benefits__tagline {
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 300;
+}
+
+.benefits__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: $basic_black;
+
+  list-style: none;
+
+  padding-top: 43px;
+}
+
+.benefits__description {
+  text-align: center;
+}
