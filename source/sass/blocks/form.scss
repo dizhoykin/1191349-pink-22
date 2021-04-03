@@ -21,7 +21,6 @@
   padding-bottom: 17px;
 
   text-transform: uppercase;
-
 }
 
 .form__answer {
@@ -34,6 +33,6 @@
   font-size: 18px;
   line-height: 30px;
 
-  border: 2px solid #E5E5E5;
+  border: 2px solid $border_grey;
   border-radius: 1px;
 }
