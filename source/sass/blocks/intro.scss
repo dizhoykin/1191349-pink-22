@@ -4,6 +4,10 @@
   background-position: center center;
 }
 
+.intro--inner {
+  background-image: none;
+}
+
 .intro__slogan {
   font-size: 24px;
   line-height: 28.8px;
@@ -14,6 +18,11 @@
   margin-bottom: 300px;
   display: block;
   text-align: center;
+}
+
+.intro__slogan--inner {
+  line-height: 32.68px;
+  margin-bottom: 0;
 }
 
 .intro__download {
@@ -50,4 +59,8 @@
 
   margin: 0;
   margin-top: 28px;
+}
+
+.intro__box--inner {
+  padding-bottom: 50px;
 }
