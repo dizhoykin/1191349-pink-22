@@ -1,7 +1,7 @@
 .intro {
   background-image: url("../img/decoration/phone.png");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center bottom 270px;
 }
 
 .intro--inner {
@@ -33,14 +33,6 @@
   padding-bottom: 38px;
 }
 
-.intro__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .intro__platforms {
   text-align: center;
   margin: 0 auto;
@@ -54,11 +46,7 @@
   font-weight: 300;
   color: $basic_white;
 
-  display: block;
   text-align: center;
-
-  margin: 0;
-  margin-top: 28px;
 }
 
 .intro__box--inner {

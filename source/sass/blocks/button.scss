@@ -3,20 +3,16 @@
   text-align: center;
 }
 
-
 .button--download {
   border: 3px solid $basic_white;
   border-radius: 35px;
-
   padding-top: 21px;
   padding-bottom: 21px;
-
-  margin-bottom: 32px;
-
   color: $basic_white;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-
   text-decoration: none;
+  width: 280px;
+  margin: 0 auto;
 }
