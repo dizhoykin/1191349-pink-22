@@ -1,3 +1,36 @@
 .modal {
+  padding-top: 36px;
+  padding-bottom: 52px;
+  padding-left: 0;
+  padding-right: 0;
+
+  width: 100%;
+
+  position: fixed;
+
+  right: 0;
+  bottom: 200px;
+  left: 0;
+  background-color: $basic_white;
+  text-align: center;
+
+  box-shadow: 0 4px 4px $opacity_black;
+}
+
+.modal__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 36px;
   color: $basic_black;
+}
+
+.modal__text {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.modal__background {
+  background-color: $light_grey;
+  padding: 52px 0;
 }
