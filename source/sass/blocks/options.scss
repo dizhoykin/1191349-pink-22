@@ -1,0 +1,38 @@
+.options {
+  background-color: $light_grey;
+  padding-top: 43px;
+}
+
+.options__table {
+  border-collapse: collapse;
+}
+
+.options__item-definition {
+  margin: 0;
+  background-color: $dark_grey;
+}
+
+.options__item-name {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $basic_white;
+}
+
+.options__item-number {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  color: $basic_white;
+}
+
+.options__feature {
+  line-height: 30px;
+
+  background-color: $basic_white;
+  border: 2px solid $border_grey;
+
+  // display: flex;
+}

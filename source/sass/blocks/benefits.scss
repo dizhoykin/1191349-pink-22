@@ -1,0 +1,37 @@
+.benefits {
+  text-align: center;
+}
+
+.benefits__list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits__tagline {
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 300;
+}
+
+.benefits__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: $basic_black;
+  list-style: none;
+  padding-top: 43px;
+}
+
+.benefits__description {
+  text-align: center;
+}
+
+.benefits__background {
+  background-color: $light_grey;
+}
+
+.benefits__item--illustrated {
+  padding-bottom: 325px;
+  background-image: url("../img/decoration/iphone-screen-smile.png");
+  background-repeat: no-repeat;
+  background-position: center bottom -35px;
+}

@@ -1,0 +1,54 @@
+.intro {
+  background-image: url("../img/decoration/phone.png");
+  background-repeat: no-repeat;
+  background-position: center bottom 270px;
+}
+
+.intro--inner {
+  background-image: none;
+}
+
+.intro__slogan {
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 300;
+  color: $basic_white;
+
+  margin-top: 29px;
+  margin-bottom: 300px;
+  display: block;
+  text-align: center;
+}
+
+.intro__slogan--inner {
+  line-height: 32.68px;
+  margin-bottom: 0;
+}
+
+.intro__download {
+  background-color: $accent_grey;
+
+  padding: 0 20px;
+  padding-top: 28px;
+  padding-bottom: 38px;
+}
+
+.intro__platforms {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.intro__platform-item {
+  padding: 0 15px;
+}
+
+.intro__platforms-description {
+  font-weight: 300;
+  color: $basic_white;
+
+  text-align: center;
+}
+
+.intro__box--inner {
+  padding-bottom: 50px;
+}
