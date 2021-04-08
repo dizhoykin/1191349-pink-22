@@ -15,7 +15,7 @@
 .options__item-name {
   font-size: 16px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: $bold;
   color: $basic_white;
 }
 
@@ -24,7 +24,7 @@
 
   font-size: 18px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: $light;
   color: $basic_white;
 }
 
@@ -33,6 +33,4 @@
 
   background-color: $basic_white;
   border: 2px solid $border_grey;
-
-  // display: flex;
 }

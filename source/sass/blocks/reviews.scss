@@ -5,14 +5,9 @@
 .reviews__author-name {
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: $bold;
   color: $basic_black;
   font-style: normal;
   display: block;
-  text-align: center;
-}
-
-.reviews__text {
-  line-height: 30px;
   text-align: center;
 }

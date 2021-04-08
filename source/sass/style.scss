@@ -1,7 +1,6 @@
 @import "global/variables.scss";
 @import "global/fonts.scss";
-@import "global/container.scss";
-@import "global/flex.scss";
+@import "global/global.scss";
 @import "blocks/benefits.scss";
 @import "blocks/button.scss";
 @import "blocks/card.scss";
@@ -13,15 +12,12 @@
 @import "blocks/main-nav.scss";
 @import "blocks/modal.scss";
 @import "blocks/options.scss";
-@import "blocks/page-catalog.scss";
 @import "blocks/page-footer.scss";
-@import "blocks/page-form.scss";
 @import "blocks/page-header.scss";
-@import "blocks/page-main.scss";
 @import "blocks/page.scss";
 @import "blocks/preview.scss";
 @import "blocks/reviews.scss";
 @import "blocks/slider.scss";
 @import "blocks/social.scss";
+@import "blocks/tagline.scss";
 @import "blocks/user-form.scss";
-@import "blocks/visually-hidden.scss";

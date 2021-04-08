@@ -1,0 +1,15 @@
+.tagline {
+  font-size: $tagline_font-size;
+  line-height: $tagline_line-height-index;
+  font-weight: $light;
+  color: $dark_grey;
+}
+
+.tagline--index {
+  color: $basic_white;
+}
+
+.tagline--inner {
+  color: $basic_white;
+  line-height: $tagline_line-height-inner;
+}

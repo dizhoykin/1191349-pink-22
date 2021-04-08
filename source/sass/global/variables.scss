@@ -1,3 +1,9 @@
+// Viewports
+
+$tablet-width: 660px;
+$desktop-width: 1200px;
+$mobile-width-only: 659px;
+
 // Colors
 
 $basic_black: rgba(0, 0, 0, 1);
@@ -6,6 +12,7 @@ $opacity_black: rgba(0, 0, 0, 0.3);
 $light_grey: rgba(242, 242, 242, 1);
 $dark_grey: rgba(40, 54, 69, 1);
 $dark_opacity-grey: rgba(40, 54, 69, 0.1);
+
 $accent_grey: rgba(29, 38, 49, 1);
 $border_grey: rgba(229, 229, 229, 1);
 
@@ -15,3 +22,18 @@ $basic_green: rgba(42, 171, 109, 1);
 
 $basic_white: rgba(255, 255, 255, 1);
 $shadow_white: rgba(255, 255, 255, 0.15);
+
+// Fonts
+
+$basic_font-size: 14px;
+$basic_line-height: 24px;
+
+$tagline_font-size: 24px;
+$tagline_line-height-index: 28.8px;
+$tagline_line-height-inner: 32.68px;
+
+// font-weight
+
+$light: 300;
+$regular: 400;
+$bold: 700;

@@ -2,11 +2,14 @@
   background-image: url("../img/decoration/back-mobile.png");
   background-color: $opacity_black;
   background-repeat: no-repeat;
-  background-position: center bottom 30px;
   background-size: cover;
 }
 
-.page-header--form {
+.page-header--index {
+  background-position: center bottom 30px;
+}
+
+.page-header--inner {
   background-position: center top 0;
 }
 
@@ -14,11 +17,16 @@
   background-color: $opacity_black;
   padding-top: 21px;
   padding-bottom: 22px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .page-header__toggle {
   background: none;
   border: none;
+
+  text-align: right;
+}
+
+.page-header__logo {
+  // outline: 5px solid rgba(255, 0, 0, 0.8);
+  // outline-offset: -5px;
 }
