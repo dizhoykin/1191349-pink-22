@@ -1,3 +1,32 @@
 .user-form {
-  color: $basic_black;
+  background-color: $light_grey;
+  padding-top: 20px;
+  padding-bottom: 29px;
+  width: 100%;
+}
+
+.user-form__fieldset {
+  border: none;
+  margin-top: 42px;
+  margin-bottom: 39px;
+  padding: 0;
+  text-align: center;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-form__image {
+  display: block;
+}
+
+.user-form__range {
+  width: 100%;
+}
+
+.user-form__button-block {
+  border-top: 1px solid $dark_opacity-grey;
+
+  margin-top: 34px;
+  padding-top: 38px;
 }

@@ -17,3 +17,37 @@
   margin: 0 auto;
   vertical-align: middle;
 }
+
+.button--upload {
+  border: 3px solid $accent_red;
+  border-radius: 35px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  color: $accent_red;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  width: 280px;
+  margin: 0 auto;
+  vertical-align: middle;
+
+  margin-bottom: 12px;
+}
+
+.button--cancel {
+  border: 3px solid $dark_opacity-grey;
+  border-radius: 35px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  color: $dark_opacity-grey;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  width: 280px;
+  margin: 0 auto;
+  vertical-align: middle;
+
+  margin-bottom: 12px;
+}
