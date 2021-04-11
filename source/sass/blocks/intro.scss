@@ -1,7 +1,16 @@
 .intro {
   background-image: url("../img/decoration/phone.png");
   background-repeat: no-repeat;
-  background-position: center bottom 270px;
+  background-position: center bottom 305px;
+
+  outline: 5px solid red;
+  outline-offset: -5px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__box {
+    width: 300px;
+  }
 }
 
 .intro--inner {
@@ -13,6 +22,9 @@
   margin-bottom: 300px;
   display: block;
   text-align: center;
+
+  outline: 5px solid blue;
+  outline-offset: -5px;
 }
 
 .intro__slogan--inner {
@@ -25,11 +37,19 @@
   padding: 0 20px;
   padding-top: 28px;
   padding-bottom: 38px;
+
+  outline: 5px solid green;
+  outline-offset: -5px;
 }
 
 .intro__platforms {
   text-align: center;
   margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 28px;
+
+  outline: 5px solid red;
+  outline-offset: -5px;
 }
 
 .intro__platform-item {
@@ -37,10 +57,15 @@
 }
 
 .intro__platforms-description {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: $light;
   color: $basic_white;
 
   text-align: center;
+
+  outline: 5px solid white;
+  outline-offset: -5px;
 }
 
 .intro__box--inner {

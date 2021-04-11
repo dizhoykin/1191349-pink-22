@@ -15,6 +15,9 @@
   line-height: 18px;
   font-weight: $bold;
   text-decoration: none;
+
+  outline: 5px solid red;
+  outline-offset: -5px;
 }
 
 .button--upload {

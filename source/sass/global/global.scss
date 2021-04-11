@@ -24,6 +24,23 @@ img {
   padding-right: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .container--tablet {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container--desktop {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
