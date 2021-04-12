@@ -25,23 +25,31 @@ img {
 }
 
 @media (min-width: $tablet-width) {
-  .container--tablet {
-    display: flex;
-    justify-content: space-between;
+  .container {
+    // display: flex;
+    // justify-content: space-between;
     width: 620px;
     margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .container--desktop {
+  .container {
     width: 940px;
-    display: flex;
-    justify-content: space-between;
+
+    // display: flex;
+    // justify-content: space-between;
   }
 }
 
 .flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
 }

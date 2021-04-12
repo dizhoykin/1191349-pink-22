@@ -16,8 +16,14 @@
   font-weight: $bold;
   text-decoration: none;
 
-  outline: 5px solid red;
-  outline-offset: -5px;
+  // outline: 5px solid red;
+  // outline-offset: -5px;
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    font-size: 21px;
+  }
 }
 
 .button--upload {

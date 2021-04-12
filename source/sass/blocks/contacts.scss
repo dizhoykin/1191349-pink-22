@@ -13,6 +13,22 @@
   list-style: none;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts__list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .contacts__text {
   font-size: 18px;
   line-height: 24.51px;
@@ -26,4 +42,7 @@
   color: $accent_red;
 
   text-decoration: none;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
