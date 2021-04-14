@@ -47,34 +47,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .benefits__list {
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 260px;
-
-    text-align: center;
-
-    display: flex;
-    justify-content: space-around;
-
-    background-image:
-      url("../img/decoration/iphone-screen-before.png"),
-      url("../img/decoration/iphone-screen-after.png"),
-      url("../img/decoration/iphone-screen-smile.png");
-
-    background-repeat:
-      no-repeat,
-      no-repeat,
-      no-repeat;
-
-    background-position:
-      104px 0,
-      410px 0,
-      700px 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
   .benefits__subtitle {
     font-size: 30px;
     line-height: 30px;
@@ -85,6 +57,21 @@
 }
 
 @media (min-width: $desktop-width) {
+  .benefits__list {
+    padding-left: 24px;
+    padding-right: 24px;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: space-around;
+
+    background: none;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
   .benefits__description {
     font-size: 18px;
     line-height: 30px;
@@ -93,6 +80,20 @@
 
 @media (min-width: $desktop-width) {
   .benefits__item {
-    background-color: $light_grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.benefits__image-container {
+  order: -1;
+  max-height: 260px;
+  overflow: hidden;
+}
+
+@media (max-width: $desktop-width) {
+  .benefits__image-container {
+    display: none;
   }
 }
