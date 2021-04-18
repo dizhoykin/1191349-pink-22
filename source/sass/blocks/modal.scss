@@ -1,6 +1,5 @@
 .modal {
   padding-top: 36px;
-  padding-bottom: 52px;
   padding-left: 0;
   padding-right: 0;
 
@@ -15,6 +14,14 @@
   text-align: center;
 
   box-shadow: 0 4px 4px $opacity_black;
+}
+
+.modal__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .modal__title {
@@ -33,4 +40,47 @@
 .modal__background {
   background-color: $light_grey;
   padding: 52px 0;
+}
+
+.modal--error .modal__wrapper {
+  padding-bottom: 45px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 460px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__text {
+    font-size: 18px;
+  }
+
+  .modal__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 330px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal {
+    width: 780px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .modal__wrapper {
+    width: 456px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

@@ -18,33 +18,19 @@
   display: none;
 }
 
-@media (min-width: $tablet-width) {
-  .reviews__author-description {
-    display: block;
-  }
-}
-
 .reviews__toggles {
   text-align: center;
-}
-
-@media (min-width: $desktop-width) {
-  .reviews__toggles {
-    display: none;
-  }
 }
 
 .reviews__toggles--desktop-only {
   display: none;
 }
 
-@media (min-width: $desktop-width) {
-  .reviews__toggles--desktop-only {
+@media (min-width: $tablet-width) {
+  .reviews__author-description {
     display: block;
   }
-}
 
-@media (min-width: $tablet-width) {
   .reviews__quote {
     order: -1;
     font-size: 18px;
@@ -52,6 +38,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews__toggles {
+    display: none;
+  }
+
+  .reviews__toggles--desktop-only {
+    display: block;
+  }
+
   .reviews__quote {
     padding-left: 126px;
     padding-right: 126px;

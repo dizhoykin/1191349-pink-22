@@ -21,17 +21,6 @@
   text-align: center;
 }
 
-@media (min-width: $tablet-width) {
-  .benefits__list {
-    padding-left: 50%;
-    background-image: url("../img/decoration/iphone 3.png");
-    background-position: 0 33px;
-    padding-bottom: 20px;
-
-    text-align: left;
-  }
-}
-
 .benefits__tagline {
   font-size: $tagline_font-size;
   line-height: $tagline_line-height-index;
@@ -46,6 +35,23 @@
   padding-top: 43px;
 }
 
+.benefits__image-container {
+  order: -1;
+  max-height: 260px;
+  overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__list {
+    padding-left: 50%;
+    background-image: url("../img/decoration/iphone 3.png");
+    background-position: 0 33px;
+    padding-bottom: 20px;
+
+    text-align: left;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .benefits__subtitle {
     font-size: 30px;
@@ -54,9 +60,7 @@
 
     padding-top: 59px;
   }
-}
 
-@media (min-width: $desktop-width) {
   .benefits__list {
     padding-left: 24px;
     padding-right: 24px;
@@ -68,28 +72,17 @@
 
     background: none;
   }
-}
 
-
-@media (min-width: $desktop-width) {
   .benefits__description {
     font-size: 18px;
     line-height: 30px;
   }
-}
 
-@media (min-width: $desktop-width) {
   .benefits__item {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-}
-
-.benefits__image-container {
-  order: -1;
-  max-height: 260px;
-  overflow: hidden;
 }
 
 @media (max-width: $desktop-width) {

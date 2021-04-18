@@ -4,23 +4,8 @@
   background-position: 50% 24%;
 }
 
-@media (min-width: $tablet-width) {
-  .intro__box {
-    background-image: url("../img/decoration/phone-tablet.png");
-    background-position: 31% 100%;
-
-    padding-right: 50%;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .intro__box {
-    background-image: url("../img/decoration/phone-desktop.png");
-    background-position: -55% 96%;
-  }
-}
-
 .intro__box--inner {
+  background: none;
   padding-bottom: 50px;
 }
 
@@ -30,12 +15,6 @@
   padding: 0 20px;
   padding-top: 28px;
   padding-bottom: 38px;
-}
-
-@media (min-width: $tablet-width) {
-  .intro__download {
-    background: none;
-  }
 }
 
 .intro--inner {
@@ -53,20 +32,8 @@
   width: 280px;
 }
 
-@media (min-width: $tablet-width) {
-  .intro__slogan {
-    margin-bottom: 40px;
-    padding-top: 102px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .intro__slogan {
-    padding-top: 114px;
-  }
-}
-
 .intro__slogan--inner {
+  padding-bottom: 30px;
   margin-bottom: 0;
 }
 
@@ -82,7 +49,6 @@
 }
 
 .intro__platforms-description {
-
   margin-top: 20px;
   margin-bottom: 0;
   font-weight: $light;
@@ -95,12 +61,6 @@
   margin-right: auto;
 }
 
-@media (min-width: $tablet-width) {
-  .intro__platforms-description {
-    font-size: 18px;
-  }
-}
-
 .intro__wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -109,12 +69,46 @@
 }
 
 @media (min-width: $tablet-width) {
+  .intro__box {
+    background-image: url("../img/decoration/phone-tablet.png");
+    background-position: 31% 100%;
+
+    padding-right: 50%;
+  }
+
+  .intro__download {
+    background: none;
+  }
+
+  .intro__slogan {
+    margin-bottom: 40px;
+    padding-top: 102px;
+  }
+
+  .intro__slogan--inner {
+    padding-bottom: 100px;
+    width: 510px;
+  }
+
   .intro__wrapper {
     width: 620px;
+  }
+
+  .intro__platforms-description {
+    font-size: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .intro__box {
+    background-image: url("../img/decoration/phone-desktop.png");
+    background-position: -55% 96%;
+  }
+
+  .intro__slogan {
+    padding-top: 114px;
+  }
+
   .intro__wrapper {
     width: 940px;
   }
