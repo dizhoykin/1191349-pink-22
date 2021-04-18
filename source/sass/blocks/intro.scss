@@ -1,28 +1,27 @@
-.intro {
+.intro__box {
   background-image: url("../img/decoration/phone.png");
   background-repeat: no-repeat;
-  background-position: center bottom 270px;
+  background-position: 50% 24%;
 }
 
-.intro--inner {
-  background-image: none;
+@media (min-width: $tablet-width) {
+  .intro__box {
+    background-image: url("../img/decoration/phone-tablet.png");
+    background-position: 31% 100%;
+
+    padding-right: 50%;
+  }
 }
 
-.intro__slogan {
-  font-size: 24px;
-  line-height: 28.8px;
-  font-weight: 300;
-  color: $basic_white;
-
-  margin-top: 29px;
-  margin-bottom: 300px;
-  display: block;
-  text-align: center;
+@media (min-width: $desktop-width) {
+  .intro__box {
+    background-image: url("../img/decoration/phone-desktop.png");
+    background-position: -55% 96%;
+  }
 }
 
-.intro__slogan--inner {
-  line-height: 32.68px;
-  margin-bottom: 0;
+.intro__box--inner {
+  padding-bottom: 50px;
 }
 
 .intro__download {
@@ -33,9 +32,49 @@
   padding-bottom: 38px;
 }
 
+@media (min-width: $tablet-width) {
+  .intro__download {
+    background: none;
+  }
+}
+
+.intro--inner {
+  background-image: none;
+}
+
+.intro__slogan {
+  margin: 0;
+  padding-top: 29px;
+  margin-bottom: 300px;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__slogan {
+    margin-bottom: 40px;
+    padding-top: 102px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__slogan {
+    padding-top: 114px;
+  }
+}
+
+.intro__slogan--inner {
+  margin-bottom: 0;
+}
+
 .intro__platforms {
   text-align: center;
   margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 28px;
 }
 
 .intro__platform-item {
@@ -43,12 +82,40 @@
 }
 
 .intro__platforms-description {
-  font-weight: 300;
+
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-weight: $light;
   color: $basic_white;
 
   text-align: center;
+  width: 280px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.intro__box--inner {
-  padding-bottom: 50px;
+@media (min-width: $tablet-width) {
+  .intro__platforms-description {
+    font-size: 18px;
+  }
+}
+
+.intro__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__wrapper {
+    width: 620px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__wrapper {
+    width: 940px;
+  }
 }

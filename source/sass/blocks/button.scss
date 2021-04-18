@@ -1,53 +1,52 @@
 .button {
   display: block;
   text-align: center;
-}
-
-.button--download {
-  border: 3px solid $basic_white;
-  border-radius: 35px;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  color: $basic_white;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  text-decoration: none;
   width: 280px;
   margin: 0 auto;
   vertical-align: middle;
+
+  border: 3px solid $basic_white;
+  border-radius: 35px;
+  padding: 21px 0;
+
+  color: $basic_white;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: $bold;
+  text-decoration: none;
+
+  // outline: 5px solid red;
+  // outline-offset: -5px;
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    font-size: 21px;
+  }
 }
 
 .button--upload {
-  border: 3px solid $accent_red;
-  border-radius: 35px;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  border-color: $accent_red;
   color: $accent_red;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  text-decoration: none;
-  width: 280px;
-  margin: 0 auto;
-  vertical-align: middle;
 
   margin-bottom: 12px;
 }
 
 .button--cancel {
-  border: 3px solid $dark_opacity-grey;
-  border-radius: 35px;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  border-color: $dark_opacity-grey;
   color: $dark_opacity-grey;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  text-decoration: none;
-  width: 280px;
-  margin: 0 auto;
-  vertical-align: middle;
 
   margin-bottom: 12px;
+}
+
+.button--form {
+  border: 2px solid $basic_green;
+  border-radius: 1px;
+  padding: 15px 45px;
+
+  background-color: $basic_green;
+
+  line-height: 30px;
+  text-transform: uppercase;
 }

@@ -4,8 +4,14 @@
 }
 
 .copyright__text {
-  font-size: 14px;
+  font-size: $basic_font-size;
   line-height: 18px;
   text-align: center;
   padding-right: 15px;
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    font-size: 18px;
+  }
 }

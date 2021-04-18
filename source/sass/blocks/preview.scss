@@ -1,3 +1,76 @@
 .preview {
-  // background-color: $basic_white;
+  display: none;
+  position: relative;
+  padding-top: 54px;
+  padding-bottom: 109px;
+}
+
+@media (min-width: $tablet-width) {
+  .preview {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .preview {
+    background-color: $light_grey;
+    padding-top: 59px;
+  }
+}
+
+.preview__box {
+  padding-left: 40%;
+  padding-bottom: 29px;
+  background-image: url("../img/decoration/timer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+@media (min-width: $desktop-width) {
+  .preview__box {
+    background-image: url("../img/decoration/timer-big.svg");
+    background-position: 18px 3px;
+    padding-bottom: 114px;
+  }
+}
+
+.preview__title {
+  margin: 0;
+  padding-top: 48px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: $bold;
+  color: $basic_black;
+
+  max-width: 168px;
+}
+
+@media (min-width: $desktop-width) {
+  .preview__title {
+    max-width: 300px;
+    line-height: 30px;
+  }
+}
+
+.preview__excerpt {
+  max-width: 296px;
+}
+
+@media (min-width: $desktop-width) {
+  .preview__excerpt {
+    max-width: 540px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.preview__link {
+  color: $accent_red;
+}
+
+@media (min-width: $desktop-width) {
+  .preview__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

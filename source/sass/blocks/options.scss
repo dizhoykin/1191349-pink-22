@@ -3,8 +3,25 @@
   padding-top: 43px;
 }
 
+@media (min-width: $tablet-width) {
+  .options {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .options {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+
 .options__table {
   border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 940px;
 }
 
 .options__item-definition {
@@ -15,7 +32,7 @@
 .options__item-name {
   font-size: 16px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: $bold;
   color: $basic_white;
 }
 
@@ -24,8 +41,18 @@
 
   font-size: 18px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: $light;
   color: $basic_white;
+}
+
+@media (min-width: $desktop-width) {
+  .options__item-name {
+    font-size: 18px;
+  }
+
+  .options__item-number {
+    font-size: 24px;
+  }
 }
 
 .options__feature {
@@ -33,6 +60,42 @@
 
   background-color: $basic_white;
   border: 2px solid $border_grey;
+  text-align: center;
+  min-width: 280px;
+}
 
-  // display: flex;
+@media (max-width: $tablet-width) {
+  .options__feature-name {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .options__feature-name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .options__feature::before {
+    text-transform: uppercase;
+  }
+
+  .options__value--first-row .options__feature::before {
+    content: "Розовый фильтр";
+  }
+
+  .options__value--second-row .options__feature::before {
+    content: "Смайлики";
+  }
+
+  .options__value--third-row .options__feature::before {
+    content: "Комментарии";
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .options__toggles {
+    display: none;
+  }
 }

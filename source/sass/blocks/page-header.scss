@@ -2,23 +2,30 @@
   background-image: url("../img/decoration/back-mobile.png");
   background-color: $opacity_black;
   background-repeat: no-repeat;
-  background-position: center bottom 30px;
   background-size: cover;
 }
 
-.page-header--form {
+.page-header--index {
+  background-position: center bottom;
+}
+
+.page-header--inner {
   background-position: center top 0;
 }
 
 .page-header__box {
   background-color: $opacity_black;
-  padding-top: 21px;
-  padding-bottom: 22px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .page-header__toggle {
   background: none;
   border: none;
+
+  text-align: right;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__toggle {
+    display: none;
+  }
 }

@@ -1,37 +1,99 @@
 .benefits {
   text-align: center;
+  margin-top: 40px;
+}
+
+.benefits__background {
+  margin-top: 40px;
+  background-color: $light_grey;
 }
 
 .benefits__list {
   list-style: none;
   padding: 0;
+  margin: 0;
+
+  padding-bottom: 325px;
+
+  background-image: url("../img/decoration/iphone-screen-smile.png");
+  background-repeat: no-repeat;
+  background-position: 50% 107%;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__list {
+    padding-left: 50%;
+    background-image: url("../img/decoration/iphone 3.png");
+    background-position: 0 33px;
+    padding-bottom: 20px;
+
+    text-align: left;
+  }
 }
 
 .benefits__tagline {
-  font-size: 24px;
-  line-height: 28.8px;
-  font-weight: 300;
+  font-size: $tagline_font-size;
+  line-height: $tagline_line-height-index;
+  font-weight: $light;
 }
 
 .benefits__subtitle {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: $bold;
   color: $basic_black;
   list-style: none;
   padding-top: 43px;
 }
 
-.benefits__description {
-  text-align: center;
+@media (min-width: $desktop-width) {
+  .benefits__subtitle {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 0;
+
+    padding-top: 59px;
+  }
 }
 
-.benefits__background {
-  background-color: $light_grey;
+@media (min-width: $desktop-width) {
+  .benefits__list {
+    padding-left: 24px;
+    padding-right: 24px;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: space-around;
+
+    background: none;
+  }
 }
 
-.benefits__item--illustrated {
-  padding-bottom: 325px;
-  background-image: url("../img/decoration/iphone-screen-smile.png");
-  background-repeat: no-repeat;
-  background-position: center bottom -35px;
+
+@media (min-width: $desktop-width) {
+  .benefits__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.benefits__image-container {
+  order: -1;
+  max-height: 260px;
+  overflow: hidden;
+}
+
+@media (max-width: $desktop-width) {
+  .benefits__image-container {
+    display: none;
+  }
 }
