@@ -3,20 +3,6 @@
   padding-top: 43px;
 }
 
-@media (min-width: $tablet-width) {
-  .options {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .options {
-    padding-left: 130px;
-    padding-right: 130px;
-  }
-}
-
 .options__table {
   border-collapse: collapse;
   margin: 0 auto;
@@ -45,16 +31,6 @@
   color: $basic_white;
 }
 
-@media (min-width: $desktop-width) {
-  .options__item-name {
-    font-size: 18px;
-  }
-
-  .options__item-number {
-    font-size: 24px;
-  }
-}
-
 .options__feature {
   line-height: 30px;
 
@@ -64,19 +40,22 @@
   min-width: 280px;
 }
 
-@media (max-width: $tablet-width) {
-  .options__feature-name {
+@media (min-width: $tablet-width) {
+  .options {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .options__toggles {
     display: none;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .options__feature-name {
-    font-size: 18px;
-  }
-}
-
 @media (max-width: $tablet-width) {
+  .options__feature-name {
+    display: none;
+  }
+
   .options__feature::before {
     text-transform: uppercase;
   }
@@ -94,8 +73,21 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .options__toggles {
-    display: none;
+@media (min-width: $desktop-width) {
+  .options {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .options__item-name {
+    font-size: 18px;
+  }
+
+  .options__item-number {
+    font-size: 24px;
+  }
+
+  .options__feature-name {
+    font-size: 18px;
   }
 }

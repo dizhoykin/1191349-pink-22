@@ -1,7 +1,43 @@
+.main-nav {
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+}
 
 .main-nav__list {
   padding: 0;
   margin: 0;
+}
+
+.main-nav__item {
+  list-style: none;
+  box-shadow:
+    0 1px 0 $basic_black,
+    inset 0 1px 0 $shadow_white;
+
+  background-color: $dark_grey;
+  text-align: center;
+}
+
+.main-nav__item:first-child {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__link {
+  display: block;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $basic_white;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: $bold;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,46 +55,20 @@
     display: flex;
     justify-content: space-between;
   }
-}
 
-.main-nav__item {
-  list-style: none;
-  box-shadow:
-    0 1px 0 $basic_black,
-    inset 0 1px 0 $shadow_white;
-
-  background-color: $dark_grey;
-  text-align: center;
-}
-
-@media (min-width: $desktop-width) {
   .main-nav__item {
     background-color: transparent;
     border-color: transparent;
     box-shadow: none;
   }
-}
 
-.main-nav__item:first-child {
-  padding-top: 25px;
-  padding-bottom: 25px;
-
-  display: flex;
-  justify-content: space-between;
-}
-
-@media (max-width: $desktop-width) {
-  .main-nav__item:first-child {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    background-color: $dark_grey;
+  .main-nav__link {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: $regular;
+    text-transform: none;
   }
-}
 
-@media (min-width: $desktop-width) {
   .main-nav__item:first-child {
     display: block;
     margin-right: 173px;
@@ -70,30 +80,13 @@
   }
 }
 
-.main-nav__link {
-  display: block;
+@media (max-width: $desktop-width) {
+  .main-nav__item:first-child {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $basic_white;
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: $bold;
-
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav__link {
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: $regular;
-    text-transform: none;
+    background-color: $dark_grey;
   }
-}
-
-.main-nav {
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
 }
