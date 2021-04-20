@@ -3,10 +3,40 @@
 }
 
 .gallery__image--main {
-  width: 320px;
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
 }
 
 .gallery__item {
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 620px;
+  }
+
+  .gallery__item {
+    flex-basis: 300px;
+  }
+
+  .gallery__image {
+    width: 300px;
+  }
+
+  .gallery__image--main {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__list {
+    width: 940px;
+  }
 }
