@@ -72,4 +72,13 @@
     width: 100%;
     max-width: none;
   }
+
+  .button--upload,
+  .button--cancel {
+    width: 183px;
+  }
+
+  .button--upload {
+    margin-right: 44px;
+  }
 }

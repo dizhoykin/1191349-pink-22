@@ -5,72 +5,94 @@
   width: 100%;
 }
 
+.user-form__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .user-form__fieldset {
   border: none;
   margin-top: 42px;
-  margin-bottom: 39px;
+  margin-bottom: 10px;
   padding: 0;
   text-align: center;
-
-  display: flex;
-  justify-content: space-around;
 }
 
 .user-form__image {
   display: block;
 }
 
-.user-form__button-block {
-  border-top: 1px solid $dark_opacity-grey;
+.user-form__list {
+  position: relative;
+}
 
+.user-form__list-item {
+  display: inline-block;
+  width: 48px;
+  height: 44px;
+  margin: 0 15px;
+}
+
+.user-form__button-block {
   margin-top: 34px;
   padding-top: 38px;
 }
 
-.user-form__range {
-  appearance: none;
-  margin: 10px 0;
-  width: 100%;
+@media (min-width: $tablet-width) {
+  .user-form {
+    padding-top: 45px;
+  }
+
+  .user-form__wrapper {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .user-form__fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .user-form__image {
+    width: 300px;
+    height: 400px;
+    margin-right: 25px;
+  }
+
+  .user-form__list-item {
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+    width: 24px;
+    height: 24px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .user-form__button-block {
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 
-.user-form__range:focus {
-  outline: none;
-}
+@media (min-width: $desktop-width) {
+  .user-form__wrapper {
+    width: 940px;
+    justify-content: space-around;
+  }
 
-.user-form__range::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 2px;
-  cursor: pointer;
-  background: #283645;
-}
-
-.user-form__range::-webkit-slider-thumb {
-  border: 2px solid #d22856;
-  height: 14px;
-  width: 14px;
-  border-radius: 50%;
-  background: #ffffff;
-  cursor: pointer;
-  appearance: none;
-  margin-top: -6px;
-}
-
-.user-form__range:focus::-webkit-slider-runnable-track {
-  background: #283645;
-}
-
-.user-form__range::-moz-range-track {
-  width: 100%;
-  height: 2px;
-  cursor: pointer;
-  background: #283645;
-}
-
-.user-form__range::-moz-range-thumb {
-  border: 2px solid #d22856;
-  height: 14px;
-  width: 14px;
-  border-radius: 50%;
-  background: #ffffff;
-  cursor: pointer;
+  .user-form__button-block {
+    display: flex;
+  }
 }
