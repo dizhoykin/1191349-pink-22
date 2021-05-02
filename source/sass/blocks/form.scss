@@ -29,6 +29,7 @@
 .form__label {
   font-size: $basic_font-size;
   line-height: 30px;
+  cursor: pointer;
 }
 
 .form__label--text {
@@ -65,10 +66,20 @@
   margin-bottom: 14px;
   font-size: 18px;
   line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
   border: 2px solid $border_grey;
   border-radius: 1px;
   width: 100%;
   box-sizing: border-box;
+}
+
+.form__input:hover {
+  border-color: $dark_grey;
+}
+
+.form__input:focus {
+  border-color: $accent_red;
+  outline: none;
 }
 
 .form__list-item--achievements,
@@ -84,10 +95,86 @@
   margin-top: 30px;
 }
 
+.form__question {
+  color: $accent_red;
+}
+
 .form__label--checkbox,
 .form__label--radio {
-  padding-left: 20px;
+  padding-left: 56px;
   font-size: 18px;
+  position: relative;
+}
+
+.form__checkbox,
+.form__radio {
+  display: none;
+}
+
+.form__label--checkbox::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: -8px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid $border_grey;
+  background-color: $basic_white;
+}
+
+.form__checkbox:checked + .form__label--checkbox::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: -8px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid $border_grey;
+  background-color: $basic_white;
+  background-image: url("../img/decoration/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__label--radio::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: -8px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid $border_grey;
+  background-color: $basic_white;
+  border-radius: 50%;
+}
+
+.form__radio:checked + .form__label--radio::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: -8px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid $border_grey;
+  background-color: $basic_white;
+  border-radius: 50%;
+  background-image: url("../img/decoration/point.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__label--checkbox:hover::before,
+.form__label--radio:hover::before,
+.form__checkbox:checked + .form__label--checkbox:hover::after,
+.form__radio:checked + .form__label--radio:hover::after {
+  border-color: $dark_grey;
+}
+
+.form__label--checkbox:active::before,
+.form__label--radio:active::before,
+.form__checkbox:checked + .form__label--checkbox:active::after,
+.form__radio:checked + .form__label--radio:active::after {
+  border-color: $accent_red;
 }
 
 @media (min-width: $tablet-width) {
@@ -119,6 +206,34 @@
     padding-left: 0;
     padding-right: 20px;
     margin-bottom: 0;
+  }
+
+  .form__label--phone,
+  .form__label--mail {
+    position: relative;
+  }
+
+  .form__label--phone::after,
+  .form__label--mail::after {
+    position: absolute;
+    content: "";
+    width: 53px;
+    height: 53px;
+    background-color: $border_grey;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    top: -67px;
+    right: 0;
+  }
+
+  .form__label--phone::after {
+    background-image: url("../img/decoration/phone-icon.svg");
+    background-size: 20px 19px;
+  }
+
+  .form__label--mail::after {
+    background-image: url("../img/decoration/mail-icon.svg");
+    background-size: 18px 13px;
   }
 
   .form__send {
@@ -196,6 +311,12 @@
   .form__send {
     width: 100%;
     margin-bottom: 40px;
+  }
+
+  .form__label--phone::after,
+  .form__label--mail::after {
+    right: -53px;
+    top: -68px;
   }
 
   .form__achievements-list {

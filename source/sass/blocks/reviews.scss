@@ -1,3 +1,7 @@
+.reviews__list {
+  padding-top: 20px;
+}
+
 .reviews__item {
   margin: 0;
   text-align: center;
@@ -6,7 +10,7 @@
 }
 
 .reviews__author-name {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 30px;
   font-weight: $bold;
   color: $basic_black;
@@ -26,9 +30,47 @@
   display: none;
 }
 
+.reviews__toggle {
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.reviews__toggle--prev,
+.reviews__toggle--next {
+  position: absolute;
+  top: -155px;
+}
+
+.reviews__svg {
+  fill: $dark_grey;
+  opacity: 0.3;
+}
+
+.reviews__toggle--prev:hover .reviews__svg,
+.reviews__toggle--next:hover .reviews__svg {
+  opacity: 0.6;
+}
+
+.reviews__toggle--prev:active .reviews__svg,
+.reviews__toggle--next:active .reviews__svg {
+  opacity: 0.1;
+}
+
+.reviews__toggle--prev {
+  left: 0;
+}
+
+.reviews__toggle--next {
+  left: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .reviews__author-description {
     display: block;
+    font-style: normal;
+    line-height: 30px;
   }
 
   .reviews__quote {
@@ -38,12 +80,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  .reviews__toggles {
+  .reviews__author-description {
+    font-size: 18px;
+  }
+
+  .reviews__toggles--mobile {
     display: none;
   }
 
   .reviews__toggles--desktop-only {
     display: block;
+    position: relative;
   }
 
   .reviews__quote {

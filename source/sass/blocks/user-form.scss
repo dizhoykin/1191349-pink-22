@@ -34,6 +34,29 @@
   width: 48px;
   height: 44px;
   margin: 0 15px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.user-form__svg {
+  fill: $dark_grey;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.user-form__svg:hover {
+  fill: $dark_grey;
+  opacity: 0.5;
+}
+
+.user-form__svg:active {
+  fill: $accent_red;
+  opacity: 1;
+}
+
+.user-form__list-item--current .user-form__svg {
+  fill: $accent_red;
+  opacity: 1;
 }
 
 .user-form__button-block {
@@ -94,5 +117,15 @@
 
   .user-form__button-block {
     display: flex;
+  }
+
+  .user-form__list-item {
+    svg {
+      width: 44px;
+      height: 44px;
+      position: absolute;
+      top: -12px;
+      left: -9px;
+    }
   }
 }

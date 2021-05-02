@@ -1,0 +1,76 @@
+.logo {
+  width: 74px;
+  height: 23px;
+  font-size: 0;
+}
+
+.logo--header {
+  position: absolute;
+  top: 22px;
+  z-index: 10;
+}
+
+.logo--footer {
+  display: block;
+  width: 145px;
+  height: 40px;
+}
+
+.logo__svg--header {
+  fill: $basic_white;
+}
+
+.logo__svg--footer {
+  fill: $dark_grey;
+}
+
+.logo__svg--symbol {
+  fill: $accent_red;
+}
+
+.logo--htmlacademy {
+  fill: $accent_red;
+}
+
+.logo--htmlacademy:hover {
+  fill: $dark_grey;
+}
+
+.logo--htmlacademy:active {
+  fill: $dark_opacity-grey;
+}
+
+.logo--header:hover .logo__svg--header,
+.logo--footer:hover .logo__svg--footer {
+  fill: $accent_red;
+}
+
+.logo--header:active .logo__svg--header {
+  fill: $basic_white;
+  opacity: 0.3;
+}
+
+.logo--footer:active .logo__svg--footer {
+  fill: $dark_grey;
+  opacity: 0.3;
+}
+
+.logo--footer:active .logo__svg--symbol {
+  fill: $opacity_red;
+}
+
+@media (min-width: $tablet-width) {
+  .logo--header {
+    width: 145px;
+    height: 40px;
+    position: absolute;
+    top: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo--header,
+  .logo--footer {
+    width: 147px;
+  }
+}

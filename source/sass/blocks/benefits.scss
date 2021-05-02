@@ -4,8 +4,11 @@
 }
 
 .benefits__background {
-  margin-top: 40px;
-  background-color: $light_grey;
+  padding-top: 15px;
+  background-image: url("../img/decoration/grey background.svg");
+  background-repeat: no-repeat;
+  background-size: 120% auto;
+  background-position: 50% -50px;
 }
 
 .benefits__list {
@@ -13,7 +16,7 @@
   padding: 0;
   margin: 0;
 
-  padding-bottom: 325px;
+  padding-bottom: 305px;
 
   background-image: url("../img/decoration/iphone-screen-smile.png");
   background-repeat: no-repeat;
@@ -49,6 +52,10 @@
     padding-bottom: 20px;
 
     text-align: left;
+  }
+
+  .benefits__background {
+    padding-top: 20px;
   }
 }
 
