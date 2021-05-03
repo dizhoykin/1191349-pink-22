@@ -12,10 +12,10 @@
   border: 2px solid $basic_green;
   border-radius: 1px;
   color: $basic_white;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $basic_font_family;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: $bold;
   text-transform: uppercase;
   width: 280px;
 }
