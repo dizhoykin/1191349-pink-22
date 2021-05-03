@@ -32,6 +32,10 @@
   border-radius: 50%;
 }
 
+.range__toggle:active {
+  background-color: $accent_red;
+}
+
 .range__toggle--cut {
   left: 230px;
 }

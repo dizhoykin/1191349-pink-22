@@ -7,7 +7,7 @@
 
   border: 3px solid $basic_white;
   border-radius: 35px;
-  padding: 21px 0;
+  padding: 16px 0;
 
   color: $basic_white;
   font-family: inherit;
@@ -15,9 +15,17 @@
   line-height: 18px;
   font-weight: $bold;
   text-decoration: none;
+  cursor: pointer;
+}
 
-  // outline: 5px solid red;
-  // outline-offset: -5px;
+.button--download:hover,
+.button--download:active {
+  color: $accent_red;
+  background-color: $basic_white;
+}
+
+.button--download:active {
+  color: $opacity_red;
 }
 
 .button--upload {
@@ -27,11 +35,34 @@
   margin-bottom: 12px;
 }
 
+.button--upload:hover {
+  background-color: $accent_red;
+  color: $basic_white;
+}
+
+.button--upload:active {
+  background-color: $accent_red;
+  color: $opacity_white;
+}
+
 .button--cancel {
   border-color: $dark_opacity-grey;
   color: $dark_opacity-grey;
 
   margin-bottom: 12px;
+}
+
+.button--cancel:hover {
+  border-color: $dark_grey;
+  color: $dark_grey;
+  opacity: 0.3;
+}
+
+.button--cancel:active {
+  border-color: $dark_grey;
+  background-color: $dark_grey;
+  color: $opacity_white;
+  opacity: 0.3;
 }
 
 .button--form {
@@ -44,6 +75,15 @@
   line-height: 30px;
   text-transform: uppercase;
   max-width: 296px;
+}
+
+.button--form:hover,
+.button--form:active {
+  background-color: $action_green;
+}
+
+.button--form:active {
+  color: $opacity_white;
 }
 
 @media (min-width: $tablet-width) {

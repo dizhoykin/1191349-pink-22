@@ -7,25 +7,10 @@
 
 .page-header--index {
   background-position: center bottom;
+  min-height: 733px;
 }
 
 .page-header--inner {
   background-position: center top 0;
-}
-
-.page-header__box {
-  background-color: $opacity_black;
-}
-
-.page-header__toggle {
-  background: none;
-  border: none;
-
-  text-align: right;
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__toggle {
-    display: none;
-  }
+  min-height: 237px;
 }
