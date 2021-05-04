@@ -2,15 +2,28 @@
   background-image: url("../img/decoration/back-mobile.png");
   background-color: $opacity_black;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
 }
 
 .page-header--index {
-  background-position: center bottom;
+  background-position: center top;
   min-height: 733px;
 }
 
 .page-header--inner {
   background-position: center top 0;
   min-height: 237px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    background-image: url("../img/decoration/back-tablet.png");
+    // background-size: 1200px auto;
+    background-position: 50% 0;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/decoration/back-tablet@2.png");
+    background-size: 1200px auto;
+  }
 }

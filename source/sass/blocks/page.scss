@@ -5,7 +5,7 @@
 .page__body {
   min-height: 100%;
 
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $basic_font_family;
   font-size: $basic_font-size;
   line-height: $basic_line-height;
   font-weight: $regular;
