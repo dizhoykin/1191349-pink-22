@@ -16,16 +16,17 @@
   height: 40px;
 }
 
+.logo__svg--tablet,
+.logo__svg--desktop {
+  display: none;
+}
+
 .logo__svg--header {
   fill: $basic_white;
 }
 
 .logo__svg--footer {
   fill: $dark_grey;
-}
-
-.logo__svg--symbol {
-  fill: $accent_red;
 }
 
 .logo--htmlacademy {
@@ -55,16 +56,22 @@
   opacity: 0.3;
 }
 
-.logo--footer:active .logo__svg--symbol {
-  fill: $opacity_red;
-}
-
 @media (min-width: $tablet-width) {
   .logo--header {
     width: 145px;
     height: 40px;
     position: absolute;
-    top: 40px;
+    top: 25px;
+    left: 20px;
+  }
+
+  .logo__svg--tablet {
+    display: block;
+  }
+
+  .logo__svg--mobile,
+  .logo__svg--desktop {
+    display: none;
   }
 }
 
@@ -72,5 +79,15 @@
   .logo--header,
   .logo--footer {
     width: 147px;
+  }
+
+  .logo__svg--desktop {
+    display: block;
+  }
+
+  .logo__svg--mobile,
+  .logo__svg--tablet,
+  .logo__svg--mobile-tablet {
+    display: none;
   }
 }
