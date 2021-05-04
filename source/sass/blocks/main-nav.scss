@@ -43,8 +43,14 @@
   opacity: 0.3;
 }
 
-.main-nav__toggle .main-nav__menu-icon--close {
+.main-nav__toggle .main-nav__menu-icon--open {
   display: none;
+  // display: block;
+}
+
+.main-nav__toggle .main-nav__menu-icon--close {
+  // display: none;
+  display: block;
 }
 
 .main-nav__toggle--closed .main-nav__menu-icon--open {

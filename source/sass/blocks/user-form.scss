@@ -42,16 +42,16 @@
   fill: $dark_grey;
   opacity: 0.3;
   cursor: pointer;
-}
 
-.user-form__svg:hover {
-  fill: $dark_grey;
-  opacity: 0.5;
-}
+  &:hover {
+    fill: $dark_grey;
+    opacity: 0.5;
+  }
 
-.user-form__svg:active {
-  fill: $accent_red;
-  opacity: 1;
+  &:active {
+    fill: $accent_red;
+    opacity: 1;
+  }
 }
 
 .user-form__list-item--current .user-form__svg {

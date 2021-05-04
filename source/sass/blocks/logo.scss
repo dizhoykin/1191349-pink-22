@@ -31,14 +31,16 @@
 
 .logo--htmlacademy {
   fill: $accent_red;
-}
+  width: 27px;
+  height: 34px;
 
-.logo--htmlacademy:hover {
-  fill: $dark_grey;
-}
+  &:hover {
+    fill: $dark_grey;
+  }
 
-.logo--htmlacademy:active {
-  fill: $dark_opacity-grey;
+  &:active {
+    fill: $dark_opacity-grey;
+  }
 }
 
 .logo--header:hover .logo__svg--header,
