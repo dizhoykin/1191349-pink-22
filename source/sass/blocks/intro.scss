@@ -4,6 +4,11 @@
 
 .intro__box {
   background-image: url("../img/decoration/phone-mobile.png");
+
+  @supports (background-image: url("../img/decoration/phone-mobile.webp")) {
+    background-image: url("../img/decoration/phone-mobile.webp");
+  }
+
   background-repeat: no-repeat;
   background-position: 50% 18%;
 }
@@ -11,6 +16,11 @@
 @media (min-resolution: 2dppx) {
   .intro__box {
     background-image: url("../img/decoration/phone-mobile@2x.png");
+
+    @supports (background-image: url("../img/decoration/phone-mobile@2x.webp")) {
+      background-image: url("../img/decoration/phone-mobile@2x.webp");
+    }
+
     background-size: 320px 286px;
   }
 }
@@ -86,6 +96,11 @@
 
   .intro__box {
     background-image: url("../img/decoration/phone-tablet.png");
+
+    @supports (background-image: url("../img/decoration/phone-tablet.webp")) {
+      background-image: url("../img/decoration/phone-tablet.webp");
+    }
+
     background-position: 31% 100%;
     padding-right: 50%;
   }
@@ -93,6 +108,11 @@
   @media (min-resolution: 2dppx) {
     .intro__box {
       background-image: url("../img/decoration/phone-tablet@2x.png");
+
+      @supports (background-image: url("../img/decoration/phone-tablet@2x.webp")) {
+        background-image: url("../img/decoration/phone-tablet@2x.webp");
+      }
+
       background-size: 660px 545px;
     }
   }
@@ -123,12 +143,22 @@
 @media (min-width: $desktop-width) {
   .intro__box {
     background-image: url("../img/decoration/phone-desktop.png");
+
+    @supports (background-image: url("../img/decoration/phone-desktop.webp")) {
+      background-image: url("../img/decoration/phone-desktop.webp");
+    }
+
     background-position: -55% 96%;
   }
 
   @media (min-resolution: 2dppx) {
     .intro__box {
       background-image: url("../img/decoration/phone-desktop@2x.png");
+
+      @supports (background-image: url("../img/decoration/phone-desktop@2x.webp")) {
+        background-image: url("../img/decoration/phone-desktop@2x.webp");
+      }
+
       background-size: 1050px 645px;
     }
   }

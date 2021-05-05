@@ -6,6 +6,7 @@
 .benefits__background {
   padding-top: 15px;
   background-image: url("../img/decoration/grey-background.svg");
+
   background-repeat: no-repeat;
   background-size: 120% auto;
   background-position: 50% -50px;
@@ -19,6 +20,11 @@
   padding-bottom: 305px;
 
   background-image: url("../img/decoration/iphone-screen-smile.png");
+
+  @supports (background-image: url("../img/decoration/iphone-screen-smile.webp")) {
+    background-image: url("../img/decoration/iphone-screen-smile.webp");
+  }
+
   background-repeat: no-repeat;
   background-position: 50% 107%;
   text-align: center;
@@ -48,6 +54,11 @@
   .benefits__list {
     padding-left: 50%;
     background-image: url("../img/decoration/iphone 3.png");
+
+    @supports (background-image: url("../img/decoration/iphone 3.webp")) {
+      background-image: url("../img/decoration/iphone 3.webp");
+    }
+
     background-position: 0 33px;
     padding-bottom: 20px;
 
