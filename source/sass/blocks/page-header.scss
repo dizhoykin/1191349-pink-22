@@ -1,5 +1,5 @@
 .page-header {
-  background-image: url("../img/decoration/back-mobile.png");
+  background-image: url("../img/decoration/back-mobile.jpg");
   background-color: $accent_grey;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -7,7 +7,7 @@
 
 @media (min-resolution: 2dppx) {
   .page-header {
-    background-image: url("../img/decoration/back-mobile@2x.png");
+    background-image: url("../img/decoration/back-mobile@2x.jpg");
   }
 }
 
@@ -23,26 +23,26 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    background-image: url("../img/decoration/back-tablet.png");
+    background-image: url("../img/decoration/back-tablet.jpg");
     background-size: cover;
     background-position: 50% 0;
   }
 
   @media (min-resolution: 2dppx) {
     .page-header {
-      background-image: url("../img/decoration/back-tablet@2x.png");
+      background-image: url("../img/decoration/back-tablet@2x.jpg");
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    background-image: url("../img/decoration/back-desktop.png");
+    background-image: url("../img/decoration/back-desktop.jpg");
   }
 
   @media (min-resolution: 2dppx) {
     .page-header {
-      background-image: url("../img/decoration/back-desktop@2x.png");
+      background-image: url("../img/decoration/back-desktop@2x.jpg");
     }
   }
 }

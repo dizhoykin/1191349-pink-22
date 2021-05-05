@@ -71,15 +71,15 @@
   border-radius: 1px;
   width: 100%;
   box-sizing: border-box;
-}
 
-.form__input:hover {
-  border-color: $dark_grey;
-}
+  &:hover {
+    border-color: $dark_grey;
+  }
 
-.form__input:focus {
-  border-color: $accent_red;
-  outline: none;
+  &:focus {
+    border-color: $accent_red;
+    outline: none;
+  }
 }
 
 .form__list-item--achievements,
@@ -217,12 +217,12 @@
   .form__label--mail::after {
     position: absolute;
     content: "";
-    width: 53px;
-    height: 53px;
+    width: 50px;
+    height: 50px;
     background-color: $border_grey;
     background-repeat: no-repeat;
     background-position: 50%;
-    top: -67px;
+    top: -66px;
     right: 0;
   }
 
@@ -265,6 +265,7 @@
   .form__list-item--contacts {
     display: flex;
     flex-direction: column;
+    min-width: 371px;
   }
 
   .form__list-item--contacts .form__input--contacts {
@@ -311,12 +312,6 @@
   .form__send {
     width: 100%;
     margin-bottom: 40px;
-  }
-
-  .form__label--phone::after,
-  .form__label--mail::after {
-    right: -53px;
-    top: -68px;
   }
 
   .form__achievements-list {

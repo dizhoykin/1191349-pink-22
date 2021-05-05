@@ -19,12 +19,12 @@
 
   margin-left: 14px;
   cursor: pointer;
-}
 
-.social__item:hover {
-  border-color: $dark_grey;
-}
+  &:hover {
+    border-color: $dark_grey;
+  }
 
-.social__item:active {
-  opacity: 0.1;
+  &:active {
+    opacity: 0.1;
+  }
 }
