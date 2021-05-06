@@ -1,8 +1,8 @@
 .page-header {
   background-image: url("../img/decoration/back-mobile.jpg");
 
-  @supports (background-image: url("../img/map/back-mobile.webp")) {
-    background-image: url("../img/map/back-mobile.webp");
+  @supports (background-image: url("../img/decoration/back-mobile.webp")) {
+    background-image: url("../img/decoration/back-mobile.webp");
   }
 
   background-color: $accent_grey;
@@ -14,8 +14,8 @@
   .page-header {
     background-image: url("../img/decoration/back-mobile@2x.jpg");
 
-    @supports (background-image: url("../img/map/back-mobile@2x.webp")) {
-      background-image: url("../img/map/back-mobile@2x.webp");
+    @supports (background-image: url("../img/decoration/back-mobile@2x.webp")) {
+      background-image: url("../img/decoration/back-mobile@2x.webp");
     }
   }
 }
@@ -34,8 +34,8 @@
   .page-header {
     background-image: url("../img/decoration/back-tablet.jpg");
 
-    @supports (background-image: url("../img/map/back-tablet.webp")) {
-      background-image: url("../img/map/back-tablet.webp");
+    @supports (background-image: url("../img/decoration/back-tablet.webp")) {
+      background-image: url("../img/decoration/back-tablet.webp");
     }
 
     background-size: cover;
@@ -46,8 +46,8 @@
     .page-header {
       background-image: url("../img/decoration/back-tablet@2x.jpg");
 
-      @supports (background-image: url("../img/map/back-tablet@2x.webp")) {
-        background-image: url("../img/map/back-tablet@2x.webp");
+      @supports (background-image: url("../img/decoration/back-tablet@2x.webp")) {
+        background-image: url("../img/decoration/back-tablet@2x.webp");
       }
     }
   }
@@ -57,8 +57,8 @@
   .page-header {
     background-image: url("../img/decoration/back-desktop.jpg");
 
-    @supports (background-image: url("../img/map/back-desktop.webp")) {
-      background-image: url("../img/map/back-desktop.webp");
+    @supports (background-image: url("../img/decoration/back-desktop.webp")) {
+      background-image: url("../img/decoration/back-desktop.webp");
     }
   }
 
@@ -66,8 +66,8 @@
     .page-header {
       background-image: url("../img/decoration/back-desktop@2x.jpg");
 
-      @supports (background-image: url("../img/map/back-desktop@2x.webp")) {
-        background-image: url("../img/map/back-desktop@2x.webp");
+      @supports (background-image: url("../img/decoration/back-desktop@2x.webp")) {
+        background-image: url("../img/decoration/back-desktop@2x.webp");
       }
     }
   }

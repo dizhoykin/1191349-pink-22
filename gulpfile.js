@@ -130,8 +130,10 @@ exports.default = gulp.series(
 
 const copy = (done) => {
   gulp.src([
+    "source/css/style.css",
     "source/fonts/*.{woff2,woff}",
-    "source/fonts/*.ico",
+    "source/favicon.ico",
+    "source/manifest.webmanifest",
     "source/img/**/*.{*.svg}"
   ], {
     base: "source"

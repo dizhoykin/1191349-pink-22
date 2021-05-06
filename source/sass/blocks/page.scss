@@ -1,5 +1,6 @@
 .page {
   height: 100%;
+  word-wrap: break-word;
 }
 
 .page__body {
@@ -32,6 +33,9 @@
 .page__text--bottom {
   margin-top: 49px;
   margin-bottom: 52px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -46,6 +50,13 @@
 
   .page__text--bottom {
     font-size: 18px;
+    width: 620px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page__text--bottom {
+    width: 620px;
   }
 }
 

@@ -1,5 +1,5 @@
 .main-nav {
-  background-color: $opacity_black;
+
   width: 100%;
   min-height: 66px;
 }
@@ -63,6 +63,7 @@
 
 .main-nav__list-wrapper {
   width: 100%;
+  background-color: $opacity_black;
   position: absolute;
   z-index: 5;
   left: 0;
@@ -157,18 +158,23 @@
 
   .main-nav__list {
     width: 940px;
-    padding: 20px 130px;
+    padding: 20px 20px;
     margin: 0 auto;
 
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
   }
 
   .main-nav__item {
     background-color: transparent;
     border-color: transparent;
     box-shadow: none;
-    margin-left: 79px;
+    margin-left: 90px;
+  }
+
+  .main-nav__item--first {
+    min-height: 0;
   }
 
   .main-nav__link {
