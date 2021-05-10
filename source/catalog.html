@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
 
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="img/favicon/manifest.webmanifest">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body class="page__body">
@@ -103,7 +103,7 @@
               </svg>
             </a>
             <button class="main-nav__toggle" type="button" aria-label="Кнопка меню">
-              <svg aria-hidden="true" focusable="false" class="main-nav__menu-icon main-nav__menu-icon--open" width="50" height="24">
+              <svg aria-hidden="true" focusable="false" class="main-nav__menu-icon main-nav__menu-icon--open main-nav__display-on" width="50" height="24">
                 <use xlink:href="#menu-open-btn"></use>
               </svg>
               <svg aria-hidden="true" focusable="false" class="main-nav__menu-icon main-nav__menu-icon--close" width="23" height="23">
@@ -113,7 +113,7 @@
           </div>
 
           <div class="main-nav__list-wrapper">
-            <ul class="main-nav__list">
+            <ul class="main-nav__list main-nav__display-off">
               <li class="main-nav__item main-nav__item--first"></li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
@@ -151,7 +151,6 @@
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/panorama-desktop.webp 1x, img/catalog/panorama-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/panorama-tablet.webp 1x, img/catalog/panorama-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/catalog/panorama-mobile.webp 1x, img/catalog/panorama-mobile@2x.webp 2x">
-
             <source media="(min-width: 1200px)" srcset="img/catalog/panorama-desktop.jpg 1x, img/catalog/panorama-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/catalog/panorama-tablet.jpg 1x, img/catalog/panorama-tablet@2x.jpg 2x">
             <img src="img/catalog/panorama-mobile.jpg" srcset="img/catalog/panorama-mobile@2x.jpg 2x" class="gallery__image gallery__image--main" width="320" height="137" alt="Панорама с моста над рекой">
@@ -178,13 +177,16 @@
         </figure>
 
 
-        <div class="gallery__list container">
+        <div class="gallery__list">
           <figure class="gallery__item card">
             <div class="card__wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/car-desktop.webp 1x, img/catalog/car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/car-tablet.webp 1x, img/catalog/car-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/car-mobile.webp 1x, img/catalog/car-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/car-desktop.jpg 1x, img/catalog/car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/catalog/car-tablet.jpg 1x, img/catalog/car-tablet@2x.jpg 2x">
-                <img src="img/catalog/car-moblie.jpg" srcset="img/catalog/car-mobile@2x.jpg 2x" class="gallery__image" width="280" height="180" alt="Фотосъемка белого автомобиля">
+                <img src="img/catalog/car-mobile.jpg" srcset="img/catalog/car-mobile@2x.jpg 2x" class="gallery__image" width="280" height="180" alt="Фотосъемка белого автомобиля">
               </picture>
               <div class="card__caption">
                 <span class="card__author">Левон
@@ -209,6 +211,9 @@
           <figure class="gallery__item card">
             <div class="card__wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/drums-desktop.webp 1x, img/catalog/drums-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/drums-tablet.webp 1x, img/catalog/drums-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/drums-mobile.webp 1x, img/catalog/drums-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/drums-desktop.jpg 1x, img/catalog/drums-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/catalog/drums-tablet.jpg 1x, img/catalog/drums-tablet@2x.jpg 2x">
                 <img src="img/catalog/drums-mobile.jpg" srcset="img/catalog/drums-mobile@2x.jpg 2x" class="gallery__image" width="280" height="180" alt="Ударная установка">
@@ -236,6 +241,9 @@
           <figure class="gallery__item card">
             <div class="card__wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/roof-desktop.webp 1x, img/catalog/roof-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/roof-tablet.webp 1x, img/catalog/roof-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/roof-mobile.webp 1x, img/catalog/roof-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/roof-desktop.jpg 1x, img/catalog/roof-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/catalog/roof-tablet.jpg 1x, img/catalog/roof-tablet@2x.jpg 2x">
                 <img src="img/catalog/roof-mobile.jpg" srcset="img/catalog/roof-mobile@2x.jpg 2x" class="gallery__image" width="280" height="180" alt="Вид сверху вниз на стеклянную крышу">
@@ -263,6 +271,9 @@
           <figure class="gallery__item card">
             <div class="card__wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/fair-desktop.webp 1x, img/catalog/fair-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/fair-tablet.webp 1x, img/catalog/fair-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/fair-mobile.webp 1x, img/catalog/fair-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/fair-desktop.jpg 1x, img/catalog/fair-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/catalog/fair-tablet.jpg 1x, img/catalog/fair-tablet@2x.jpg 2x">
                 <img src="img/catalog/fair-mobile.jpg" srcset="img/catalog/fair-mobile@2x.jpg 2x" class="gallery__image" width="280" height="180" alt="Торговля фруктами под оранжевым навесом">
@@ -290,6 +301,9 @@
           <figure class="gallery__item card">
             <div class="card__wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/mounts-desktop.webp 1x, img/catalog/mounts-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/mounts-tablet.webp 1x, img/catalog/mounts-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/mounts-mobile.webp 1x, img/catalog/mounts-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/mounts-desktop.jpg 1x, img/catalog/mounts-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/catalog/mounts-tablet.jpg 1x, img/catalog/mounts-tablet@2x.jpg 2x">
                 <img src="img/catalog/mounts-mobile.jpg" srcset="img/catalog/mounts-mobile@2x.jpg 2x" class="gallery__image" width="280" height="180" alt="Вид сверху на горы и ноги">
@@ -317,6 +331,9 @@
           <figure class="gallery__item card">
             <div class="card__wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/flight-desktop.webp 1x, img/catalog/flight-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/flight-tablet.webp 1x, img/catalog/flight-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/flight-mobile.webp 1x, img/catalog/flight-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/flight-desktop.jpg 1x, img/catalog/flight-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/catalog/flight-tablet.jpg 1x, img/catalog/flight-tablet@2x.jpg 2x">
                 <img src="img/catalog/flight-mobile.jpg" srcset="img/catalog/flight-mobile@2x.jpg 2x" class="gallery__image" width="280" height="180" alt="Вид из окна самолета на крыло и солнце">
@@ -342,11 +359,13 @@
           </figure>
         </div>
       </section>
-      <p class="page__text page__text--bottom container">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+      <p class="page__text page__text--bottom">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
 
       <form class="user-form" method="get" action="https://echo.htmlacademy.ru/" target="_blank">
         <div class="user-form__wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/road-tablet.webp 1x, img/catalog/road-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/catalog/road-mobile.webp 1x, img/catalog/road-mobile@2x.webp 2x">
             <source media="(min-width: 660px)" srcset="img/catalog/road-tablet.jpg 1x, img/catalog/road-tablet@2x.jpg 2x">
             <img src="img/catalog/road-mobile.jpg" srcset="img/catalog/road-mobile@2x.jpg 2x" class="user-form__image" width="280" height="374" alt="Зимняя дорога в лесу">
           </picture>
@@ -455,5 +474,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.min.js"></script>
+
   </body>
 </html>

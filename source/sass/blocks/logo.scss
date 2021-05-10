@@ -8,12 +8,14 @@
   position: absolute;
   top: 22px;
   z-index: 10;
+  // left: 8px;
 }
 
 .logo--footer {
   display: block;
   width: 145px;
   height: 40px;
+  margin-bottom: 24px;
 }
 
 .logo__svg--tablet,
@@ -32,7 +34,7 @@
 .logo--htmlacademy {
   fill: $accent_red;
   width: 27px;
-  height: 34px;
+  height: 42px;
 
   &:hover {
     fill: $dark_grey;
@@ -64,7 +66,7 @@
     height: 40px;
     position: absolute;
     top: 25px;
-    left: 20px;
+    left: 0;
   }
 
   .logo__svg--tablet {
@@ -83,6 +85,11 @@
     width: 147px;
   }
 
+  .logo--header {
+    top: 15px;
+    left: 0;
+  }
+
   .logo__svg--desktop {
     display: block;
   }
@@ -91,5 +98,9 @@
   .logo__svg--tablet,
   .logo__svg--mobile-tablet {
     display: none;
+  }
+
+  .logo--htmlacademy {
+    height: 56px;
   }
 }

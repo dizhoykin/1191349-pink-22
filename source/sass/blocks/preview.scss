@@ -7,7 +7,7 @@
 
 .preview__box {
   padding-left: 50%;
-  padding-bottom: 29px;
+  padding-bottom: 22px;
   background-image: url("../img/decoration/timer.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -15,7 +15,7 @@
 
 .preview__title {
   margin: 0;
-  padding-top: 48px;
+  padding-top: 42px;
   font-size: 30px;
   line-height: 36px;
   font-weight: $bold;
@@ -26,6 +26,8 @@
 
 .preview__excerpt {
   max-width: 296px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .preview__link {
@@ -35,34 +37,45 @@
 @media (min-width: $tablet-width) {
   .preview {
     display: block;
+    padding-bottom: 41px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .preview {
     background-color: $light_grey;
-    padding-top: 59px;
+    padding-top: 0;
+    padding-right: 35px;
+    padding-bottom: 0;
   }
 
   .preview__box {
     background-image: url("../img/decoration/timer-big.svg");
-    background-position: 18px 3px;
-    padding-bottom: 114px;
+    background-position: 18px 19px;
+    padding-bottom: 112px;
+    padding-left: 41%;
+    padding-top: 29px;
   }
 
   .preview__title {
     max-width: 300px;
     line-height: 30px;
+    padding-top: 85px;
+    padding-left: 2px;
   }
 
   .preview__excerpt {
     max-width: 540px;
     font-size: 18px;
     line-height: 30px;
+    padding-top: 15px;
+    margin-bottom: 31px;
   }
 
   .preview__link {
     font-size: 18px;
     line-height: 30px;
+    padding-top: 16px;
+    padding-left: 1px;
   }
 }
