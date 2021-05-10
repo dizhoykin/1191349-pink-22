@@ -6,6 +6,7 @@
 
 .gallery__image {
   display: block;
+  // object-fit: cover;
 }
 
 .gallery__main-image-pointer-wrapper {
@@ -65,6 +66,7 @@
 
   .gallery__image--main {
     width: 100%;
+    height: auto;
   }
 }
 

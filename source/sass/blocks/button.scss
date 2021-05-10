@@ -1,13 +1,14 @@
 .button {
   display: block;
   text-align: center;
-  width: 280px;
+  width: 274px;
   margin: 0 auto;
   vertical-align: middle;
 
   border: 3px solid $basic_white;
   border-radius: 35px;
-  padding: 16px 0;
+  padding-top: 15px;
+  padding-bottom: 16px;
 
   color: $basic_white;
   font-family: inherit;
@@ -99,6 +100,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .button--download {
+    width: 294px;
+  }
+
   .button--form {
     font-size: 18px;
     margin: 0 0;
@@ -112,6 +117,11 @@
 @media (min-width: $desktop-width) {
   .button {
     font-size: 21px;
+  }
+
+  .button--download {
+    margin-left: 130px;
+    margin-top: 7px;
   }
 
   .button--form {

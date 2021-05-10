@@ -1,6 +1,6 @@
 .page-footer {
   text-align: center;
-  padding: 40px 0;
+  padding: 33px 0;
 }
 
 .page__footer-wrapper {
@@ -10,8 +10,23 @@
   align-items: center;
 }
 
+.page-footer__social {
+  margin-bottom: 32px;
+}
+
 @media (min-width: $tablet-width) {
   .page__footer-wrapper {
     justify-content: space-between;
+    padding-top: 2px;
+  }
+
+  .page-footer {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__footer-wrapper {
+    padding-top: 39px;
   }
 }

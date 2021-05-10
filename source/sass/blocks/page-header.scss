@@ -22,7 +22,7 @@
 
 .page-header--index {
   background-position: 50%  0;
-  min-height: 709px;
+  height: 729px;
 }
 
 .page-header--inner {
@@ -38,7 +38,7 @@
       background-image: url("../img/decoration/back-tablet.webp");
     }
 
-    background-size: cover;
+    background-size: 100% auto;
     background-position: 50% 0;
   }
 
@@ -60,6 +60,8 @@
     @supports (background-image: url("../img/decoration/back-desktop.webp")) {
       background-image: url("../img/decoration/back-desktop.webp");
     }
+    height: 853px;
+    background-position: 100% 12px;
   }
 
   @media (min-resolution: 2dppx) {

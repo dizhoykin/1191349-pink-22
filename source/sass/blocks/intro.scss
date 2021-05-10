@@ -1,5 +1,5 @@
 .intro {
-  padding-top: 15px;
+  padding-top: 24px;
 }
 
 .intro__box {
@@ -10,7 +10,7 @@
   }
 
   background-repeat: no-repeat;
-  background-position: 50% 18%;
+  background-position: 50% 86px;
 }
 
 @media (min-resolution: 2dppx) {
@@ -32,8 +32,8 @@
 
 .intro__download {
   background-color: $accent_grey;
+  padding-bottom: 24px;
   padding-top: 28px;
-  padding-bottom: 38px;
 }
 
 .intro--inner {
@@ -43,7 +43,7 @@
 
 .intro__slogan {
   margin: 0;
-  margin-bottom: 300px;
+  margin-bottom: 316px;
   display: block;
   text-align: center;
   margin-left: auto;
@@ -59,8 +59,8 @@
 .intro__platforms {
   text-align: center;
   margin: 0 auto;
-  margin-top: 32px;
-  margin-bottom: 28px;
+  margin-top: 30px;
+  margin-bottom: 8px;
   min-width: 280px;
 }
 
@@ -69,8 +69,12 @@
   display: inline-block;
 }
 
+.intro__platform-item--apple {
+  padding-top: 1px;
+}
+
 .intro__platforms-description {
-  margin-top: 20px;
+  margin-top: 14px;
   margin-bottom: 0;
   font-weight: $light;
   color: $basic_white;
@@ -91,7 +95,8 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    padding-top: 95px;
+    padding-top: 41px;
+    padding-bottom: 83px;
   }
 
   .intro--inner {
@@ -105,8 +110,9 @@
       background-image: url("../img/decoration/phone-tablet.webp");
     }
 
-    background-position: 31% 100%;
-    padding-right: 50%;
+    background-position: 50% 100%;
+    padding-right: 330px;
+    padding-bottom: 83px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -126,8 +132,9 @@
   }
 
   .intro__slogan {
-    margin-bottom: 40px;
-    padding-top: 102px;
+    margin-bottom: 3px;
+    padding-top: 53px;
+    padding-left: 10px;
   }
 
   .intro__slogan--inner {
@@ -139,12 +146,36 @@
     width: 620px;
   }
 
+  .intro__platforms {
+    margin-left: 6px;
+    margin-top: 42px;
+  }
+
+  .intro__platform-item {
+    // padding: 15px 15px;
+    padding-top: 0;
+  }
+
+  .intro__platform-item--google {
+    padding: 0 16px;
+  }
+
+  .intro__platform-item--microsoft {
+    padding-top: 12px;
+  }
+
   .intro__platforms-description {
     font-size: 18px;
+    width: 295px;
+    margin-top: 27px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .intro {
+    padding-top: 69px;
+  }
+
   .intro__box {
     background-image: url("../img/decoration/phone-desktop.png");
 
@@ -152,7 +183,8 @@
       background-image: url("../img/decoration/phone-desktop.webp");
     }
 
-    background-position: -55% 96%;
+    background-position: 97% 100%;
+    padding-bottom: 93px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -168,10 +200,20 @@
   }
 
   .intro__slogan {
-    padding-top: 114px;
+    padding-top: 37px;
+    padding-right: 321px;
   }
 
   .intro__wrapper {
     width: 940px;
+  }
+
+  .intro__platforms {
+    margin-right: 321px;
+    margin-top: 66px;
+  }
+
+  .intro__platforms-description {
+    margin-top: 46px;
   }
 }

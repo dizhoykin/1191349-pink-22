@@ -131,9 +131,10 @@ exports.default = gulp.series(
 const copy = (done) => {
   gulp.src([
     "source/css/style.css",
+    "source/js/script.js",
     "source/fonts/*.{woff2,woff}",
-    "source/favicon.ico",
-    "source/manifest.webmanifest",
+    "source/img/favicon/favicon.ico",
+    "source/img/favicon/manifest.webmanifest",
     "source/img/**/*.{*.svg}"
   ], {
     base: "source"

@@ -1,10 +1,18 @@
 .benefits {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 45px;
+}
+
+.benefits__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .benefits__background {
-  padding-top: 15px;
+  padding-top: 13px;
   background-image: url("../img/decoration/grey-background.svg");
 
   background-repeat: no-repeat;
@@ -15,19 +23,26 @@
 .benefits__list {
   list-style: none;
   padding: 0;
+  padding-top: 12px;
   margin: 0;
 
-  padding-bottom: 305px;
+  padding-bottom: 334px;
 
-  background-image: url("../img/decoration/iphone-screen-smile.png");
+  background-image: url("../img/decoration/iphone 3.png");
 
-  @supports (background-image: url("../img/decoration/iphone-screen-smile.webp")) {
-    background-image: url("../img/decoration/iphone-screen-smile.webp");
+  @supports (background-image: url("../img/decoration/iphone 3.webp")) {
+    background-image: url("../img/decoration/iphone 3.webp");
   }
 
   background-repeat: no-repeat;
-  background-position: 50% 107%;
+  background-position: 50% 110%;
   text-align: center;
+  background-size: 56% auto;
+}
+
+.benefits__item {
+  margin-top: 0;
+  margin-bottom: -30px;
 }
 
 .benefits__tagline {
@@ -50,7 +65,27 @@
   overflow: hidden;
 }
 
+.benefits__description {
+  margin-top: -6px;
+}
+
 @media (min-width: $tablet-width) {
+  .benefits {
+    margin-top: 47px;
+  }
+
+  .benefits__background {
+    background-size: 100% auto;
+    background-position: 50% -68px;
+    padding-top: 2px;
+  }
+
+  .benefits__wrapper {
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
   .benefits__list {
     padding-left: 50%;
     background-image: url("../img/decoration/iphone 3.png");
@@ -59,34 +94,58 @@
       background-image: url("../img/decoration/iphone 3.webp");
     }
 
-    background-position: 0 33px;
-    padding-bottom: 20px;
+    background-position: 0 29px;
+    background-size: auto;
+    padding-bottom: 82px;
 
     text-align: left;
   }
 
-  .benefits__background {
-    padding-top: 20px;
+  .benefits__item {
+    min-width: 307px;
+    margin-bottom: -53px;
+  }
+
+  .benefits__subtitle {
+    padding-top: 69px;
+  }
+
+  .benefits__description {
+    margin-top: -6px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .benefits {
+    margin-top: 63px;
+  }
+
+  .benefits__wrapper {
+    width: 940px;
+  }
+
+  .benefits__background {
+    background-position: 50% -112px;
+    padding-top: 44px;
+  }
+
   .benefits__subtitle {
     font-size: 30px;
     line-height: 30px;
     margin-top: 0;
-
-    padding-top: 59px;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-top: 56px;
   }
 
   .benefits__list {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 0;
+    padding-right: 0;
 
     text-align: center;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 
     background: none;
@@ -95,13 +154,22 @@
   .benefits__description {
     font-size: 18px;
     line-height: 30px;
+    margin-left: 28px;
+    margin-right: 28px;
   }
 
   .benefits__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 295px;
+    width: 300px;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .benefits__image-container {
+    max-height: 301px;
   }
 }
 

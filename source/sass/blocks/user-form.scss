@@ -21,6 +21,7 @@
 
 .user-form__image {
   display: block;
+  object-fit: cover;
 }
 
 .user-form__list {
@@ -125,5 +126,9 @@
       top: -12px;
       left: -9px;
     }
+  }
+
+  .tagline {
+    line-height: 67px;
   }
 }

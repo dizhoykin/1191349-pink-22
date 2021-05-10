@@ -1,5 +1,6 @@
 .map {
   position: relative;
+  margin-top: 50px;
 }
 
 .map__svg {
@@ -42,6 +43,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .map {
+    margin-top: 18px;
+  }
+
   .map__frame {
     height: 374px;
     background-image: url("../img/map/map-tablet.jpg");
@@ -67,6 +72,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .map {
+    margin-top: 1px;
+  }
+
   .map__frame {
     height: 502px;
     background-image: url("../img/map/map-desktop.jpg");
