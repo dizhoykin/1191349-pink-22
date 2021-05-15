@@ -1,76 +1,15 @@
-.page-header {
-  background-image: url("../img/decoration/back-mobile.jpg");
-
-  @supports (background-image: url("../img/decoration/back-mobile.webp")) {
-    background-image: url("../img/decoration/back-mobile.webp");
-  }
-
-  background-color: $accent_grey;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
-
-@media (min-resolution: 2dppx) {
-  .page-header {
-    background-image: url("../img/decoration/back-mobile@2x.jpg");
-
-    @supports (background-image: url("../img/decoration/back-mobile@2x.webp")) {
-      background-image: url("../img/decoration/back-mobile@2x.webp");
-    }
-  }
-}
-
 .page-header--index {
   background-position: 50%  0;
-  height: 729px;
+  margin-top: 1px;
 }
 
 .page-header--inner {
   background-position: center top 0;
-  min-height: 237px;
-}
-
-@media (min-width: $tablet-width) {
-  .page-header {
-    background-image: url("../img/decoration/back-tablet.jpg");
-
-    @supports (background-image: url("../img/decoration/back-tablet.webp")) {
-      background-image: url("../img/decoration/back-tablet.webp");
-    }
-
-    background-size: 100% auto;
-    background-position: 50% 0;
-  }
-
-  @media (min-resolution: 2dppx) {
-    .page-header {
-      background-image: url("../img/decoration/back-tablet@2x.jpg");
-
-      @supports (background-image: url("../img/decoration/back-tablet@2x.webp")) {
-        background-image: url("../img/decoration/back-tablet@2x.webp");
-      }
-    }
-  }
+  // min-height: 431px;
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-    background-image: url("../img/decoration/back-desktop.jpg");
-
-    @supports (background-image: url("../img/decoration/back-desktop.webp")) {
-      background-image: url("../img/decoration/back-desktop.webp");
-    }
-    height: 853px;
-    background-position: 100% 12px;
-  }
-
-  @media (min-resolution: 2dppx) {
-    .page-header {
-      background-image: url("../img/decoration/back-desktop@2x.jpg");
-
-      @supports (background-image: url("../img/decoration/back-desktop@2x.webp")) {
-        background-image: url("../img/decoration/back-desktop@2x.webp");
-      }
-    }
+  .page-header--inner {
+    min-height: 392px;
   }
 }
