@@ -11,6 +11,9 @@
     <link rel="manifest" href="img/favicon/manifest.webmanifest">
 
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   </head>
 
   <body class="page__body">
@@ -113,7 +116,7 @@
           </div>
 
           <div class="main-nav__list-wrapper">
-            <ul class="main-nav__list main-nav__display-off">
+            <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--first"></li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
@@ -133,15 +136,14 @@
       </nav>
 
       <section class="intro intro--inner">
-        <h1 class="tagline tagline--inner intro__slogan intro__slogan--inner container">Фотографии пользователей</h1>
+        <h1 class="tagline tagline--inner tagline--catalog intro__slogan intro__slogan--inner container">Фотографии<br>пользователей</h1>
       </section>
     </header>
-
     <main class="page-catalog">
-      <p class="page__text page__text--top container">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <p class="page__text page__text--top-catalog container">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       <section class="gallery">
         <h2 class="visually-hidden">Галерея фотографий</h2>
-        <figure class="gallery__item card">
+        <figure class="gallery__item gallery__item--main card">
           <div class="gallery__main-image-pointer-wrapper">
             <div class="gallery__main-image-pointer">
               Панорама дня
@@ -160,7 +162,7 @@
               <span class="card__author">Анна
                 <time class="card__time" datetime="2021-03-31T00:11">(5 минут назад)</time>
               </span>
-              <p class="card__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="card__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <button class="card__like-button card__like-button--main" type="button" aria-label="Поставить лайк">
                 <svg aria-hidden="true" focusable="false" width="13" height="12">
                   <use xlink:href="#like"></use>
@@ -188,13 +190,13 @@
                 <source media="(min-width: 660px)" srcset="img/catalog/car-tablet.jpg 1x, img/catalog/car-tablet@2x.jpg 2x">
                 <img src="img/catalog/car-mobile.jpg" srcset="img/catalog/car-mobile@2x.jpg 2x" class="gallery__image" width="280" height="180" alt="Фотосъемка белого автомобиля">
               </picture>
-              <div class="card__caption">
+              <div class="card__caption card__caption--gallery">
                 <span class="card__author">Левон
                   <time class="card__time" datetime="2021-03-31T00:11">(5 часов назад)</time>
                 </span>
                 <p class="card__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                 <button class="card__like-button" type="button" aria-label="Поставить лайк">
-                  <svg aria-hidden="true" focusable="false" width="13" height="12">
+                  <svg aria-hidden="true" class="card__like__svg" focusable="false" width="13" height="12">
                     <use xlink:href="#like"></use>
                   </svg>
                   <span class="card__like-label">
@@ -218,13 +220,13 @@
                 <source media="(min-width: 660px)" srcset="img/catalog/drums-tablet.jpg 1x, img/catalog/drums-tablet@2x.jpg 2x">
                 <img src="img/catalog/drums-mobile.jpg" srcset="img/catalog/drums-mobile@2x.jpg 2x" class="gallery__image" width="280" height="180" alt="Ударная установка">
               </picture>
-              <div class="card__caption">
+              <div class="card__caption card__caption--gallery">
                 <span class="card__author">Антон
                   <time class="card__time" datetime="2021-03-31T00:11">(12 часов назад)</time>
                 </span>
                 <p class="card__comment">Соседи будут рады!</p>
                 <button class="card__like-button" type="button" aria-label="Поставить лайк">
-                  <svg aria-hidden="true" focusable="false" width="13" height="12">
+                  <svg aria-hidden="true" class="card__like__svg" focusable="false" width="13" height="12">
                     <use xlink:href="#like"></use>
                   </svg>
                   <span class="card__like-label">
@@ -248,13 +250,13 @@
                 <source media="(min-width: 660px)" srcset="img/catalog/roof-tablet.jpg 1x, img/catalog/roof-tablet@2x.jpg 2x">
                 <img src="img/catalog/roof-mobile.jpg" srcset="img/catalog/roof-mobile@2x.jpg 2x" class="gallery__image" width="280" height="180" alt="Вид сверху вниз на стеклянную крышу">
               </picture>
-              <div class="card__caption">
+              <div class="card__caption card__caption--gallery">
                 <span class="card__author">Борис
                   <time class="card__time" datetime="2021-03-31T00:11">(20 часов назад)</time>
                 </span>
                 <p class="card__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
                 <button class="card__like-button" type="button" aria-label="Поставить лайк">
-                  <svg aria-hidden="true" focusable="false" width="13" height="12">
+                  <svg aria-hidden="true" class="card__like__svg"  focusable="false" width="13" height="12">
                     <use xlink:href="#like"></use>
                   </svg>
                   <span class="card__like-label">
@@ -278,13 +280,13 @@
                 <source media="(min-width: 660px)" srcset="img/catalog/fair-tablet.jpg 1x, img/catalog/fair-tablet@2x.jpg 2x">
                 <img src="img/catalog/fair-mobile.jpg" srcset="img/catalog/fair-mobile@2x.jpg 2x" class="gallery__image" width="280" height="180" alt="Торговля фруктами под оранжевым навесом">
               </picture>
-              <div class="card__caption">
+              <div class="card__caption card__caption--gallery">
                 <span class="card__author">Сергей
                   <time class="card__time" datetime="2021-03-31T00:11">(25 часов назад)</time>
                 </span>
                 <p class="card__comment">Самая кубанская в мире!</p>
                 <button class="card__like-button" type="button" aria-label="Поставить лайк">
-                  <svg aria-hidden="true" focusable="false" width="13" height="12">
+                  <svg aria-hidden="true" class="card__like__svg" focusable="false" width="13" height="12">
                     <use xlink:href="#like"></use>
                   </svg>
                   <span class="card__like-label">
@@ -308,13 +310,13 @@
                 <source media="(min-width: 660px)" srcset="img/catalog/mounts-tablet.jpg 1x, img/catalog/mounts-tablet@2x.jpg 2x">
                 <img src="img/catalog/mounts-mobile.jpg" srcset="img/catalog/mounts-mobile@2x.jpg 2x" class="gallery__image" width="280" height="180" alt="Вид сверху на горы и ноги">
               </picture>
-              <div class="card__caption">
+              <div class="card__caption card__caption--gallery">
                 <span class="card__author">Максим
                   <time class="card__time" datetime="2021-03-31T00:11">(40 часов назад)</time>
                 </span>
                 <p class="card__comment">Где снег-то?</p>
                 <button class="card__like-button" type="button" aria-label="Поставить лайк">
-                  <svg aria-hidden="true" focusable="false" width="13" height="12">
+                  <svg aria-hidden="true" class="card__like__svg" focusable="false" width="13" height="12">
                     <use xlink:href="#like"></use>
                   </svg>
                   <span class="card__like-label">
@@ -338,13 +340,13 @@
                 <source media="(min-width: 660px)" srcset="img/catalog/flight-tablet.jpg 1x, img/catalog/flight-tablet@2x.jpg 2x">
                 <img src="img/catalog/flight-mobile.jpg" srcset="img/catalog/flight-mobile@2x.jpg 2x" class="gallery__image" width="280" height="180" alt="Вид из окна самолета на крыло и солнце">
               </picture>
-              <div class="card__caption">
+              <div class="card__caption card__caption--gallery">
                 <span class="card__author">Надежда
                   <time class="card__time" datetime="2021-03-31T00:11">(45 часов назад)</time>
                 </span>
                 <p class="card__comment">Всем GM и взаимные лайки!</p>
                 <button class="card__like-button" type="button" aria-label="Поставить лайк">
-                  <svg aria-hidden="true" focusable="false" width="13" height="12">
+                  <svg aria-hidden="true" class="card__like__svg" focusable="false" width="13" height="12">
                     <use xlink:href="#like"></use>
                   </svg>
                   <span class="card__like-label">
@@ -376,42 +378,42 @@
             <dl class="user-form__list">
               <dt class="user-form__list-item user-form__list-item--cut user-form__list-item--current">
                 <button class="button button--image-change" type="button" aria-label="Обрезка изображения">
-                  <svg aria-hidden="true" focusable="false" class="user-form__svg" width="44" height="44">
+                  <svg aria-hidden="true" focusable="false" class="user-form__svg user-form__svg--cut" width="44" height="44">
                     <use xlink:href="#cut"></use>
                   </svg>
                 </button>
               </dt>
               <dd class="range">
                 <div class="range__scale">
-                  <div class="range__bar" style="width:100%"></div>
+                  <div class="range__bar" style="width:86%"></div>
                   <div class="range__toggle range__toggle--cut"></div>
                 </div>
               </dd>
 
               <dt class="user-form__list-item user-form__list-item--fill">
                 <button class="button button--image-change" type="button" aria-label="Заливка изображения">
-                  <svg aria-hidden="true" focusable="false" class="user-form__svg" width="48" height="43">
+                  <svg aria-hidden="true" focusable="false" class="user-form__svg user-form__svg--fill" width="48" height="43">
                     <use xlink:href="#fill"></use>
                   </svg>
                 </button>
               </dt>
               <dd class="range">
                 <div class="range__scale">
-                  <div class="range__bar" style="width:100%"></div>
+                  <div class="range__bar" style="width:86%"></div>
                   <div class="range__toggle range__toggle--fill"></div>
                 </div>
               </dd>
 
               <dt class="user-form__list-item user-form__list-item--contrast">
                 <button class="button button--image-change" type="button" aria-label="Контрастность изображения">
-                  <svg aria-hidden="true" focusable="false" class="user-form__svg" width="32" height="32">
+                  <svg aria-hidden="true" focusable="false" class="user-form__svg user-form__svg--contrast" width="32" height="32">
                     <use xlink:href="#contrast"></use>
                   </svg>
                 </button>
               </dt>
               <dd class="range">
                 <div class="range__scale">
-                  <div class="range__bar" style="width:100%"></div>
+                  <div class="range__bar" style="width:86%"></div>
                   <div class="range__toggle range__toggle--contrast"></div>
                 </div>
               </dd>

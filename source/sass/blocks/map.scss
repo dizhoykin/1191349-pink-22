@@ -1,6 +1,7 @@
 .map {
   position: relative;
   margin-top: 50px;
+  z-index: -1;
 }
 
 .map__svg {

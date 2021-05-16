@@ -3,6 +3,7 @@
   padding-top: 20px;
   padding-bottom: 29px;
   width: 100%;
+  margin-bottom: 7px;
 }
 
 .user-form__wrapper {
@@ -13,8 +14,8 @@
 
 .user-form__fieldset {
   border: none;
-  margin-top: 42px;
-  margin-bottom: 10px;
+  margin-top: 27px;
+  margin-left: 6px;
   padding: 0;
   text-align: center;
 }
@@ -59,13 +60,15 @@
 }
 
 .user-form__button-block {
-  margin-top: 34px;
+  margin-top: 65px;
   padding-top: 38px;
 }
 
 @media (min-width: $tablet-width) {
   .user-form {
-    padding-top: 45px;
+    padding-top: 57px;
+    margin-bottom: 8px;
+    padding-bottom: 30px;
   }
 
   .user-form__wrapper {
@@ -95,37 +98,66 @@
     margin-left: 0;
     width: 24px;
     height: 24px;
+  }
 
-    svg {
-      width: 24px;
-      height: 24px;
-    }
+  .user-form__svg--cut,
+  .user-form__svg--fill {
+    width: 24px;
+    height: 24px;
+    transform: translate(-14px, -8px);
+  }
+
+  .user-form__svg--contrast {
+    width: 16px;
+    height: 16px;
+    transform: translate(-10px, -8px);
   }
 
   .user-form__button-block {
     margin-top: 0;
     padding-top: 0;
+    margin-left: 12px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .user-form {
+    margin-bottom: 32px;
+    padding-bottom: 35px;
+  }
+
   .user-form__wrapper {
     width: 940px;
     justify-content: space-around;
+    margin-left: 179px;
   }
 
   .user-form__button-block {
     display: flex;
+    margin-top: 80px;
+    margin-right: 77px;
+    margin-left: 0;
   }
 
-  .user-form__list-item {
-    svg {
-      width: 44px;
-      height: 44px;
-      position: absolute;
-      top: -12px;
-      left: -9px;
-    }
+  .user-form__svg--cut,
+  .user-form__svg--fill {
+    transform: translate(-39px, -17px);
+  }
+
+  .user-form__svg--cut {
+    width: 44px;
+    height: 44px;
+  }
+
+  .user-form__svg--fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .user-form__svg--contrast {
+    width: 32px;
+    height: 32px;
+    transform: translate(-31px, -14px);
   }
 
   .tagline {

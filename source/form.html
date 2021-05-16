@@ -11,6 +11,9 @@
     <link rel="manifest" href="img/favicon/manifest.webmanifest">
 
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   </head>
 
   <body class="page__body">
@@ -99,7 +102,7 @@
           </div>
 
           <div class="main-nav__list-wrapper">
-            <ul class="main-nav__list main-nav__display-off">
+            <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--first"></li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
@@ -118,13 +121,13 @@
         </div>
       </nav>
 
-      <section class="intro intro--inner">
-        <h1 class="tagline tagline--inner intro__slogan intro__slogan--inner container">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <section class="intro intro--inner intro--form">
+        <h1 class="tagline tagline--inner tagline--form intro__slogan intro__slogan--inner container">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </section>
     </header>
 
     <main>
-      <p class="page__text page__text--top container">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      <p class="page__text page__text--top-form container">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         <span class="page__invite">Пожалуйста, заполните форму ниже:</span>
       </p>
       <form class="form" method="get" action="https://echo.htmlacademy.ru/" target="_blank">
@@ -149,7 +152,7 @@
 
           <div class="form__background form__achievements">
             <fieldset class="form__fieldset form__fieldset--achievements">
-              <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+              <legend class="form__legend">Ваши безбашенные достижения&nbsp;в путешествии</legend>
               <ul class="form__list form__achievements-list">
                 <li class="form__list-item form__list-item--achievements">
                   <input class="form__checkbox" id="first-checkbox" type="checkbox" name="first-achievement" checked>
@@ -220,16 +223,21 @@
 
           <div class="form__send">
             <button class="button button--form" type="submit">Отправить форму</button>
-            <p class="form__clarification"><span class="form__question">*</span> - обязательные поля</p>
+            <p class="form__clarification"><span class="form__question">*</span> — обязательные поля</p>
+            <p class="form__clarification form__clarification--desktop-only"><span class="form__question">*</span> — обязательные для заполнения поля</p>
           </div>
 
         </form>
 
         <section class="modal modal--error visually-hidden">
           <div class="modal__wrapper">
-            <h2 class="modal__title">Что-то пошло не так!</h2>
+            <h2 class="modal__title">Что-то пошло не&nbsp;так!</h2>
             <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-            <button class="button button--form" type="button">Ок</button>
+          </div>
+          <div class="modal__background">
+            <div class="modal__wrapper">
+              <button class="button button--form" type="button">Ок</button>
+            </div>
           </div>
         </section>
 
@@ -247,7 +255,7 @@
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--inner">
       <div class="container">
         <div class="page__footer-wrapper">
           <a class="logo logo--footer" href="index.html" aria-label="Сайт Пинк">

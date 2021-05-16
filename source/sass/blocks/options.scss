@@ -63,7 +63,8 @@
 
 .options__bestseller {
   position: relative;
-  background-image: url("../img/decoration/bestseller-background.svg");
+  // background-image: url("../img/decoration/bestseller-background.svg");
+  background-image: none;
   background-repeat: no-repeat;
 }
 
@@ -72,7 +73,8 @@
   content: "ХИТ";
   color: $basic_white;
   top: 20px;
-  left: 16px;
+  // left: 16px;
+  left: 12px;
   line-height: 20px;
   font-size: $basic_font-size;
 
@@ -187,8 +189,9 @@
   .options__feature::before {
     text-transform: uppercase;
     position: absolute;
+    // top: 12px;
+    top: 14px;
     left: 20px;
-    top: 12px;
   }
 
   .options__feature-name::before {
@@ -207,7 +210,8 @@
   }
 
   .options__bestseller-background {
-    top: -7px;
+    // top: -7px;
+    top: -1px;
   }
 
   .options__bestseller::before {
@@ -217,7 +221,8 @@
 
   .options__status {
     padding-left: 210px;
-    padding-top: 7px;
+    // padding-top: 7px;
+    padding-top: 11px;
   }
 
   .options__value--first-row .options__feature::before,
@@ -233,6 +238,10 @@
   .options__value--third-row .options__feature::before,
   .options__value--third-row .options__feature-name::before {
     content: "Комментарии";
+  }
+
+  .options__toggles {
+    padding-top: 4px;
   }
 }
 

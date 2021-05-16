@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="page">
+<html lang="ru" class="page no-js">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +11,9 @@
     <link rel="manifest" href="img/favicon/manifest.webmanifest">
 
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   </head>
 
   <body class="page__body">
@@ -133,7 +136,7 @@
           </div>
 
           <div class="main-nav__list-wrapper">
-            <ul class="main-nav__list main-nav__display-off">
+            <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--first"></li>
               <li class="main-nav__item main-nav__item--current">
                 <a class="main-nav__link">Главная</a>
@@ -193,26 +196,26 @@
             <ul class="benefits__list">
               <li class="benefits__item">
                 <h3 class="benefits__subtitle">Поднимает настроение</h3>
-                <div class="benefits__image-container">
-                  <source type="image/webp" srcset="img/catalog/iphone-screen-before.webp 1x, img/catalog/iphone-screen-before@2x.webp 2x">
+                <picture class="benefits__image-container">
+                  <source type="image/webp" srcset="img/decoration/iphone-screen-before.webp 1x, img/decoration/iphone-screen-before@2x.webp 2x">
                   <img class="benefits__image" src="img/decoration/iphone-screen-before.png" srcset="img/decoration/iphone-screen-before@2x.png 2x" width="308" height="382" alt="Экран смартфона с серой фотографией">
-                </div>
+                </picture>
                 <p class="benefits__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </li>
               <li class="benefits__item">
                 <h3 class="benefits__subtitle">Меняет мир вокруг</h3>
-                <div class="benefits__image-container">
-                  <source type="image/webp" srcset="img/catalog/iphone-screen-after.webp 1x, img/catalog/iphone-screen-after@2x.webp 2x">
+                <picture class="benefits__image-container">
+                  <source type="image/webp" srcset="img/decoration/iphone-screen-after.webp 1x, img/decoration/iphone-screen-after@2x.webp 2x">
                   <img class="benefits__image" src="img/decoration/iphone-screen-after.png" srcset="img/decoration/iphone-screen-after@2x.png 2x" width="308" height="382" alt="Экран смартфона с розовой фотографией">
-                </div>
+                </picture>
                 <p class="benefits__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
               </li>
               <li class="benefits__item">
                 <h3 class="benefits__subtitle">Заводит новых друзей</h3>
-                <div class="benefits__image-container">
-                  <source type="image/webp" srcset="img/catalog/iphone-screen-smile.webp 1x, img/catalog/iphone-screen-smile@2x.webp 2x">
+                <picture class="benefits__image-container">
+                  <source type="image/webp" srcset="img/decoration/iphone-screen-smile.webp 1x, img/decoration/iphone-screen-smile@2x.webp 2x">
                   <img class="benefits__image" src="img/decoration/iphone-screen-smile.png" srcset="img/decoration/iphone-screen-smile@2x.png 2x" width="308" height="382" alt="Экран смартфона с розовой фотографией и смайликом">
-                </div>
+                </picture>
                 <p class="benefits__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>

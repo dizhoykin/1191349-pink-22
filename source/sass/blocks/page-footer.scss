@@ -23,10 +23,18 @@
   .page-footer {
     padding: 0;
   }
+
+  .page-footer--inner {
+    margin-top: 41px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page__footer-wrapper {
     padding-top: 39px;
+  }
+
+  .page-footer--inner {
+    margin-top: 0;
   }
 }
