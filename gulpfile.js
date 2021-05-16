@@ -31,6 +31,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(gulp.dest("build/css"))
     .pipe(postcss([
       autoprefixer(),
       csso()
@@ -115,11 +116,17 @@ const server = (done) => {
 
 exports.server = server;
 
+const reload = (done) => {
+  sync.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/js/*.js", gulp.series(scripts));
+  gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
 exports.default = gulp.series(
@@ -130,7 +137,6 @@ exports.default = gulp.series(
 
 const copy = (done) => {
   gulp.src([
-    "source/css/style.css",
     "source/js/script.js",
     "source/fonts/*.{woff2,woff}",
     "source/img/favicon/favicon.ico",
