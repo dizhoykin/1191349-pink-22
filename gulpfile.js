@@ -8,11 +8,11 @@ const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const sync = require("browser-sync").create();
-const imagemin = require('gulp-imagemin');
-const webp = require('gulp-webp');
-const svgstore = require('gulp-svgstore');
-const del = require('del');
-const terser = require('gulp-terser');
+const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
+const del = require("del");
+const terser = require("gulp-terser");
 
 // HTML
 

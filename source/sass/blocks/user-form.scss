@@ -38,6 +38,10 @@
   z-index: 100;
 }
 
+.user-form__list-item--current + .range {
+  display: block;
+}
+
 .user-form__svg {
   fill: $dark_grey;
   opacity: 0.3;
@@ -129,13 +133,22 @@
   .user-form__wrapper {
     width: 940px;
     justify-content: space-around;
-    margin-left: 179px;
+    margin: 0 auto;
+  }
+
+  .user-form__image {
+    margin-right: 104px;
+    margin-left: 80px;
+  }
+
+  .user-form__fieldset {
+    margin-left: 25px;
   }
 
   .user-form__button-block {
     display: flex;
     margin-top: 80px;
-    margin-right: 77px;
+    margin-right: 57px;
     margin-left: 0;
   }
 
@@ -158,9 +171,5 @@
     width: 32px;
     height: 32px;
     transform: translate(-31px, -14px);
-  }
-
-  .tagline {
-    line-height: 67px;
   }
 }

@@ -240,7 +240,7 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    padding-top: 174px;
+    padding-top: 171px;
   }
 
   .intro--inner {
@@ -259,7 +259,7 @@
       background-image: url("../img/decoration/phone-desktop.webp");
     }
 
-    background-position: 97% 100%;
+    background-position: calc(50% + 71px) 100%;
     padding-bottom: 93px;
   }
 

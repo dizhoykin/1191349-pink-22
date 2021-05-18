@@ -4,12 +4,17 @@
   z-index: -1;
 }
 
-.map__svg {
+.map__svg,
+.map__svg--desktop {
   position: absolute;
   width: 100%;
   height: 200px;
   z-index: 100;
   top: -85px;
+}
+
+.map__svg--desktop {
+  display: none;
 }
 
 .map__frame {
@@ -74,11 +79,12 @@
 
 @media (min-width: $desktop-width) {
   .map {
-    margin-top: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .map__frame {
-    height: 502px;
+    height: 496px;
     background-image: url("../img/map/map-desktop.jpg");
 
     @supports (background-image: url("../img/map/map-desktop.webp")) {
@@ -97,6 +103,11 @@
   }
 
   .map__svg {
-    top: -40px;
+    display: none;
+  }
+
+  .map__svg--desktop {
+    display: block;
+    top: -59px;
   }
 }

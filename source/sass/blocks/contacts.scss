@@ -66,6 +66,11 @@
     margin-bottom: 7px;
   }
 
+  .contacts .tagline {
+    line-height: 54px;
+    margin-bottom: 0;
+  }
+
   .contacts__text {
     margin-bottom: 5px;
   }
@@ -73,7 +78,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding-top: 13px;
+    padding-top: 19px;
   }
 
   .contacts__list {
@@ -85,6 +90,10 @@
     margin: 44px 0 18px;
     margin-left: 29px;
     margin-right: 29px;
+  }
+
+  .contacts .tagline {
+    line-height: 65px;
   }
 
   .contacts__item--phone {

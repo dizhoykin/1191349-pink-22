@@ -33,10 +33,6 @@
   padding: 0;
 }
 
-.no-js .main-nav__toggle {
-  display: none;
-}
-
 .main-nav__menu-icon {
   fill: $basic_white;
   display: none;
@@ -63,12 +59,6 @@
 
 .main-nav__list {
   display: none;
-}
-
-.no-js .main-nav__list {
-  padding: 0;
-  margin: 0;
-  display: block;
 }
 
 .main-nav__display-on {
@@ -166,8 +156,7 @@
     display: block;
   }
 
-  .main-nav__list,
-  .no-js .main-nav__list {
+  .main-nav__list {
     width: 940px;
     padding: 14px 0;
     margin: 0 auto;

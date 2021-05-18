@@ -135,9 +135,9 @@
   position: relative;
 }
 
-.form__checkbox,
-.form__radio {
-  display: none;
+.form__checkbox:focus + .form__label::before,
+.form__radio:focus + .form__label::before {
+  outline: 2px solid $dark_grey;
 }
 
 .form__label--checkbox::before {

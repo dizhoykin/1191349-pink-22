@@ -248,7 +248,8 @@
 @media (min-width: $desktop-width) {
   .options {
     padding: 100px 12px 95px;
-    background-position: 44% -90px;
+    background-image: url("../img/decoration/grey-background-bottom-desktop.svg");
+    background-position: 44% 1px;
   }
 
   .options__table {

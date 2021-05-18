@@ -88,6 +88,10 @@
   .modal--error .modal__text {
     margin: 12px 0 -9px;
   }
+
+  .modal .button--form {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -137,5 +141,21 @@
 
   .modal--success .modal__background {
     padding-bottom: 47px;
+  }
+
+  .modal .button--form {
+    padding-left: 40px;
+    padding-right: 40px;
+    min-width: 456px;
+    margin-top: 3px;
+    margin-left: -20px;
+  }
+
+  .modal--error .button--form {
+    padding-left: 65px;
+    padding-right: 63px;
+    min-width: 290px;
+    margin-top: 14px;
+    margin-left: 59px;
   }
 }

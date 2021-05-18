@@ -49,10 +49,6 @@
   left: 140px;
 }
 
-.user-form__list-item--current + .range {
-  display: block;
-}
-
 @media (min-width: $tablet-width) {
   .range {
     position: static;
