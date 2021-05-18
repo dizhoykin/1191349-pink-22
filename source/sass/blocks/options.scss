@@ -63,7 +63,6 @@
 
 .options__bestseller {
   position: relative;
-  // background-image: url("../img/decoration/bestseller-background.svg");
   background-image: none;
   background-repeat: no-repeat;
 }
@@ -73,7 +72,6 @@
   content: "ХИТ";
   color: $basic_white;
   top: 20px;
-  // left: 16px;
   left: 12px;
   line-height: 20px;
   font-size: $basic_font-size;
@@ -89,6 +87,75 @@
   position: absolute;
   top: 1px;
   left: -2px;
+}
+
+@media (max-width: $tablet-width - 1) {
+  .options__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .options__feature {
+    position: relative;
+    min-width: 276px;
+    padding: 0;
+  }
+
+  .options__feature::before {
+    text-transform: uppercase;
+    position: absolute;
+    top: 14px;
+    left: 20px;
+  }
+
+  .options__feature-name::before {
+    position: absolute;
+    content: "";
+    color: $dark_grey;
+    top: 6px;
+    left: 16px;
+    line-height: 30px;
+    font-size: $basic_font-size;
+    font-weight: $regular;
+  }
+
+  .options__bestseller {
+    background-size: 76px 76px;
+  }
+
+  .options__bestseller-background {
+    top: -1px;
+  }
+
+  .options__bestseller::before {
+    top: 20px;
+    left: 13px;
+  }
+
+  .options__status {
+    padding-left: 210px;
+    padding-top: 11px;
+  }
+
+  .options__value--first-row .options__feature::before,
+  .options__value--first-row .options__feature-name::before {
+    content: "Розовый фильтр";
+  }
+
+  .options__value--second-row .options__feature::before,
+  .options__value--second-row .options__feature-name::before {
+    content: "Смайлики";
+  }
+
+  .options__value--third-row .options__feature::before,
+  .options__value--third-row .options__feature-name::before {
+    content: "Комментарии";
+  }
+
+  .options__toggles {
+    padding-top: 4px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -170,78 +237,6 @@
 
   .options__toggles {
     display: none;
-  }
-}
-
-@media (max-width: $tablet-width) {
-  .options__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .options__feature {
-    position: relative;
-    min-width: 276px;
-    padding: 0;
-  }
-
-  .options__feature::before {
-    text-transform: uppercase;
-    position: absolute;
-    // top: 12px;
-    top: 14px;
-    left: 20px;
-  }
-
-  .options__feature-name::before {
-    position: absolute;
-    content: "";
-    color: $dark_grey;
-    top: 6px;
-    left: 16px;
-    line-height: 30px;
-    font-size: $basic_font-size;
-    font-weight: $regular;
-  }
-
-  .options__bestseller {
-    background-size: 76px 76px;
-  }
-
-  .options__bestseller-background {
-    // top: -7px;
-    top: -1px;
-  }
-
-  .options__bestseller::before {
-    top: 20px;
-    left: 13px;
-  }
-
-  .options__status {
-    padding-left: 210px;
-    // padding-top: 7px;
-    padding-top: 11px;
-  }
-
-  .options__value--first-row .options__feature::before,
-  .options__value--first-row .options__feature-name::before {
-    content: "Розовый фильтр";
-  }
-
-  .options__value--second-row .options__feature::before,
-  .options__value--second-row .options__feature-name::before {
-    content: "Смайлики";
-  }
-
-  .options__value--third-row .options__feature::before,
-  .options__value--third-row .options__feature-name::before {
-    content: "Комментарии";
-  }
-
-  .options__toggles {
-    padding-top: 4px;
   }
 }
 

@@ -46,6 +46,10 @@
   margin-right: auto;
 }
 
+.page__invite {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .page__text--top-form {
     font-size: 18px;
@@ -68,11 +72,9 @@
     margin-bottom: 77px;
     font-size: 18px;
   }
-}
 
-@media (max-width: $tablet-width) {
   .page__invite {
-    display: none;
+    display: inline;
   }
 }
 
